@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+
+// base
+@import "@/styles/base/fonts";
+@import "@/styles/base/defaults";
+
+// elements
+@import "@/styles/elements/button";
+@import "@/styles/elements/svg-icon";
+@import "@/styles/elements/rounded-icon";
+@import "@/styles/elements/badge";
+
+// components
+@import "@/styles/components/app-logo";
+@import "@/styles/components/app-search";
+
+// utilities
+@tailwind utilities;

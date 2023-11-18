@@ -1,0 +1,11 @@
+html {
+    @apply font-base text-dark;
+}
+
+body {
+    @apply relative min-h-[100vh] min-w-[320px];
+}
+
+.centered {
+    @apply max-w-[1440px] mx-auto px-4 md:px-[64px];
+}
