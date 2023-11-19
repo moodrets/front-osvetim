@@ -1,13 +1,13 @@
 <template>
-    <header class="app-header">
-        <div class="app-header__top py-4 border-b border-neutral bg-white sticky top-0 z-[100]">
+    <header class="app-header sticky top-0 z-[100]">
+        <div class="app-header__top py-4 border-b border-neutral bg-white">
             <div class="centered flex items-center">
                 <div class="app-logo app-logo--header">
                     <a href="/"><img src="/logo-dark.svg" alt=""></a>
                 </div>
                 <div class="ml-auto flex items-center gap-[30px] pl-4">
-                    <GeoPosition></GeoPosition>
-                    <div class="text-center pt-4">
+                    <GeoPosition class="hidden lg:flex"></GeoPosition>
+                    <div class="text-center pt-4 hidden lg:block">
                         <a class="text-[20px] font-semibold leading-[1.1] tracking-[-0.8px]" href="tel:88126678226">
                             8 (812) 667-82-26
                         </a>
@@ -46,25 +46,20 @@
         </div>
         <div class="app-header__menu bg-white">
             <div class="centered">
-                <div class="relative flex items-center justify-between py-2.5">
+                <div class="relative flex items-center justify-between py-2.5 min-h-[44px]">
                     <div></div>
-                    <nav class="text-base leading-[1.3] font-medium">
+                    <nav class="text-base leading-[1.3] font-medium hidden md:block">
                         <ul class="flex items-center justify-center gap-[30px]">
                             <li><router-link :to="{name:'catalog'}" class="hover:underline">Каталог</router-link></li>
                             <li><router-link :to="{name:'about'}" class="hover:underline">О нас</router-link></li>
                             <li><router-link :to="{name:'articles'}" class="hover:underline">Новости</router-link></li>
-                            <li><router-link :to="{name:'delivery_and_payment'}" class="hover:underline">Доставка и оплата</router-link></li>
+                            <li><router-link :to="{name:'delivery-and-payment'}" class="hover:underline">Доставка и оплата</router-link></li>
                             <li><router-link :to="{name:'contacts'}" class="hover:underline">Контакты</router-link></li>
                         </ul>
                     </nav>
-                    <HeaderSearch></HeaderSearch>
+                    <AppSearch></AppSearch>
                 </div>
             </div>
         </div>
     </header>
 </template>
-
-<script lang="ts" setup>
-import GeoPosition from '@/components/common/GeoPosition.vue'
-import HeaderSearch from '@/components/common/HeaderSearch.vue'
-</script>

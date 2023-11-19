@@ -1,7 +1,7 @@
 .rounded-icon {
     @apply 
         relative
-        flex 
+        inline-flex 
         flex-none
         items-center 
         justify-center 
@@ -14,11 +14,12 @@
         cursor-pointer
         border-neutral 
         text-brand
+        hover:ring-1
+        hover:border-brand
+        hover:ring-brand
     ;
 
     &:hover {
-        @apply ring-1 border-brand ring-brand;
-
         .badge {
             @apply scale-125;
         }
@@ -31,6 +32,18 @@
             top-[5px]
             transition-transform
             duration-300
+        ;
+    }
+
+    &--light {
+        @apply 
+            border-white
+            border-opacity-20
+            text-stone
+            hover:ring-white
+            hover:border-white
+            hover:ring-opacity-50
+            hover:border-opacity-50
         ;
     }
 }

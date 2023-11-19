@@ -1,6 +1,6 @@
 <template>
     <div class="flex items-center text-base font-medium cursor-pointer">
-        <div class="svg-icon text-brand mr-[2px]">
+        <div class="svg-icon mr-[2px]" :class="iconClass">
             <svg><use xlink:href="#geo"></use></svg>
         </div>
         <div>Санкт-Петербург</div>
@@ -8,5 +8,12 @@
 </template>
 
 <script setup lang="ts">
-
+withDefaults(
+    defineProps<{
+        iconClass?: string
+    }>(),
+    {
+        iconClass: 'text-brand'
+    }
+)
 </script>

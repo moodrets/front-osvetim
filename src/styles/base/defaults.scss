@@ -1,3 +1,7 @@
+* {
+    @apply box-border;
+}
+
 html {
     @apply font-base text-dark;
 }
@@ -7,5 +11,19 @@ body {
 }
 
 .centered {
-    @apply max-w-[1440px] mx-auto px-4 md:px-[64px];
+    @apply max-w-[1440px] mx-auto px-4 md:px-16;
+}
+
+[hidden] {
+    @apply 
+        hidden
+    ;
+}
+
+a:not(a[class]) {
+    @apply
+        text-brand
+        hover:text-brand
+        hover:underline
+    ;
 }

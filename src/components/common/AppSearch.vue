@@ -53,3 +53,27 @@ function onSubmit() {
     
 }
 </script>
+
+<style lang="scss">
+.app-search {
+    @apply
+        absolute
+        right-8
+        left-0
+        top-0
+        bottom-0
+        transition-all
+        duration-300
+        opacity-0
+        pointer-events-none
+        bg-white
+    ;
+    
+    &.is-open {
+        @apply 
+            opacity-100
+            pointer-events-auto
+        ;
+    }
+}
+</style>

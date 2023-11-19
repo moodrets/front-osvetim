@@ -2,7 +2,9 @@ import { RouteRecordRaw, createRouter, createWebHistory } from "vue-router";
 
 // views
 import DefaultLayout from '@/layouts/Default.vue'
-import Home from '@/views/Home.vue'
+import Main from '@/views/Main.vue'
+import PublicOffer from '@/views/PublicOffer.vue'
+import DeliveryAndPayment from '@/views/DeliveryAndPayment.vue'
 
 const routes: RouteRecordRaw[] = [
     {
@@ -11,33 +13,38 @@ const routes: RouteRecordRaw[] = [
         children: [
             {
                 path: '',
-                component: Home,
                 name: 'main',
+                component: Main,
             },
             {
                 path: 'catalog',
-                component: Home,
                 name: 'catalog',
+                component: Main,
             },
             {
                 path: 'about',
-                component: Home,
                 name: 'about',
+                component: Main,
             },
             {
                 path: 'articles',
-                component: Home,
-                name: 'articles'
+                name: 'articles',
+                component: Main,
             },
             {
                 path: 'delivery-and-payment',
-                component: Home,
-                name: 'delivery_and_payment'
+                name: 'delivery-and-payment',
+                component: DeliveryAndPayment,
             },
             {
                 path: 'contacts',
-                component: Home,
-                name: 'contacts'
+                name: 'contacts',
+                component: Main,
+            },
+            {
+                path: 'public-offer',
+                name: 'public-offer',
+                component: PublicOffer,
             },
         ]
     }
@@ -46,6 +53,9 @@ const routes: RouteRecordRaw[] = [
 const router = createRouter({
     history: createWebHistory(),
     routes,
+    scrollBehavior() {
+        return { top: 0 }
+    },
 });
 
 export default router;
