@@ -11,9 +11,11 @@ import DeliveryAndPayment from '@/views/DeliveryAndPayment.vue'
 import ArticlesList from '@/views/ArticlesList.vue'
 import ArticlesItem from '@/views/ArticlesItem.vue'
 
+const routerBase = import.meta.env.MODE === 'development' ? '/' : '/front-osvetim/'
+
 const routes: RouteRecordRaw[] = [
     {
-        path: '/',
+        path: routerBase,
         component: DefaultLayout,
         children: [
             {

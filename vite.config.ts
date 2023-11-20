@@ -6,11 +6,12 @@ import * as url from 'url';
 const __dirname = url.fileURLToPath(new URL('.', import.meta.url));
 
 // https://vitejs.dev/config/
-export default defineConfig({
+export default defineConfig(({mode}) => ({
+  base: mode === 'development' ? '/' : '/front-osvetim/',
   plugins: [vue()],
   resolve: {
     alias: {
       "@": path.resolve(__dirname, 'src')
     },
   }
-})
+}))
