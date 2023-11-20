@@ -1,5 +1,6 @@
 import { RouteRecordRaw, createRouter, createWebHistory } from "vue-router";
 import { offcanvasClose } from "@/reactive/Offcanvas";
+import { routerPath } from "@/reactive/RouterPath";
 
 // views
 import DefaultLayout from '@/layouts/Default.vue'
@@ -11,11 +12,9 @@ import DeliveryAndPayment from '@/views/DeliveryAndPayment.vue'
 import ArticlesList from '@/views/ArticlesList.vue'
 import ArticlesItem from '@/views/ArticlesItem.vue'
 
-const routerBase = import.meta.env.MODE === 'development' ? '/' : '/front-osvetim/'
-
 const routes: RouteRecordRaw[] = [
     {
-        path: routerBase,
+        path: routerPath,
         component: DefaultLayout,
         children: [
             {
