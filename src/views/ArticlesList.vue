@@ -13,7 +13,7 @@
                     <div class="block-text">{{ article.text }}</div>
                     <div class="mt-auto flex items-end pt-10 md:pt-16">
                         <div class="w-[194px]">
-                            <img class="max-w-full" :src="article.img" alt="">
+                            <img class="max-w-full" :src="`${routerPath}${article.img}`" alt="">
                         </div>
                         <time class="text-[12px] uppercase  font-medium opacity-50 text-right flex-1 pl-3" :datetime="article.date">{{ article.date }}</time>
                     </div>
@@ -25,6 +25,7 @@
 </template>
 
 <script setup lang="ts">
+import { routerPath } from '@/reactive/RouterPath';
 import { ref } from 'vue'
 
 const articlesList = ref([
@@ -33,42 +34,42 @@ const articlesList = ref([
         title: 'Итоги выставки INTERLIGHT RUSSIA 2023',
         text: 'Выражаем искреннюю благодарность за то, то посетили наш стенд на международной выставке INTERLIGHT RUSSIA 2023!',
         date: '27.11.2023',
-        img: '/article-pic.png'
+        img: 'article-pic.png'
     },
     {
         id: 2,
         title: 'Каталог LOFT IT осень-зима 2023',
         text: 'Уважаемые партнеры! Спешим сообщить вам о том, что мы выпустили новый каталог LOFT IT осень-зима 2023. Ознакомиться с электронной версией можно по ссылке или в разделе «Каталог» нашего сайта.',
         date: '27.11.2023',
-        img: '/article-pic.png'
+        img: 'article-pic.png'
     },
     {
         id: 3,
         title: 'Итоги MosBuild 2023',
         text: 'Уважаемые партнеры! Спешим сообщить вам о том, что мы выпустили новый каталог LOFT IT осень-зима 2023. Ознакомиться с электронной версией можно по ссылке или в разделе «Каталог» нашего сайта.',
         date: '27.11.2023',
-        img: '/article-pic.png'
+        img: 'article-pic.png'
     },
     {
         id: 4,
         title: 'Итоги выставки INTERLIGHT RUSSIA 2023',
         text: 'Уважаемые партнеры! Спешим сообщить вам о том, что мы выпустили новый каталог LOFT IT осень-зима 2023. Ознакомиться с электронной версией можно по ссылке или в разделе «Каталог» нашего сайта.',
         date: '27.11.2023',
-        img: '/article-pic.png'
+        img: 'article-pic.png'
     },
     {
         id: 5,
         title: 'Итоги выставки INTERLIGHT RUSSIA 2023',
         text: 'Уважаемые партнеры! Спешим сообщить вам о том, что мы выпустили новый каталог LOFT IT осень-зима 2023. Ознакомиться с электронной версией можно по ссылке или в разделе «Каталог» нашего сайта.',
         date: '27.11.2023',
-        img: '/article-pic.png'
+        img: 'article-pic.png'
     },
     {
         id: 6,
         title: 'Итоги выставки INTERLIGHT RUSSIA 2023',
         text: 'Уважаемые партнеры! Спешим сообщить вам о том, что мы выпустили новый каталог LOFT IT осень-зима 2023. Ознакомиться с электронной версией можно по ссылке или в разделе «Каталог» нашего сайта.',
         date: '27.11.2023',
-        img: '/article-pic.png'
+        img: 'article-pic.png'
     }
 ])
 </script>
