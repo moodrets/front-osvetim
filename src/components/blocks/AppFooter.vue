@@ -26,11 +26,11 @@
             <div class="flex flex-col items-center gap-2 mt-8 pt-8 border-t border-neutral border-opacity-40 md:flex-row md:mt-20 md:justify-between md:border-none md:pt-0">
                 <nav class="hidden md:block md:w-1/3">
                     <ul class="text-[14px] leading-[1.4] tracking-[-0.28px]">
-                        <li><a href="#" class="hover:underline">Каталог</a></li>
-                        <li><a href="#" class="hover:underline">О нас</a></li>
-                        <li><a href="#" class="hover:underline">Доставка и оплата</a></li>
-                        <li><a href="#" class="hover:underline">Новости</a></li>
-                        <li><a href="#" class="hover:underline">Контакты</a></li>
+                        <li><router-link :to="{name:'catalog'}" class="hover:underline">Каталог</router-link></li>
+                        <li><router-link :to="{name:'about'}" class="hover:underline">О нас</router-link></li>
+                        <li><router-link :to="{name:'articles'}" class="hover:underline">Новости</router-link></li>
+                        <li><router-link :to="{name:'delivery-and-payment'}" class="hover:underline">Доставка и оплата</router-link></li>
+                        <li><router-link :to="{name:'contacts'}" class="hover:underline">Контакты</router-link></li>
                     </ul>
                 </nav>
                 <div class="flex flex-col items-center md:w-1/3">

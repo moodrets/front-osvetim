@@ -69,13 +69,12 @@ h6 {
 
 .block-text {
     @apply
-        text-[14px]
+        text-base
         text-dark
         text-opacity-80
         font-normal
         leading-[1.3]
         tracking-[-0.32px]
-        md:text-base
     ;
 }
 

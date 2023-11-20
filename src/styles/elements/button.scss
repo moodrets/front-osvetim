@@ -19,8 +19,9 @@
         border
         border-transparent
         transition-all
-        duration-200
-        focus:scale-[1.03]
+        duration-100
+        focus-visible:scale-[1.05]
+        active:scale-[1.05]
     ;
 
     &--primary {

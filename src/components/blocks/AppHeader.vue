@@ -1,3 +1,6 @@
+
+import MobileBurger from '../common/MobileBurger.vue';
+
 <template>
     <header class="app-header sticky top-0 z-[100]">
         <div class="app-header__top py-4 border-b border-neutral bg-white">
@@ -35,11 +38,7 @@
                             </div>
                             <div class="badge">7</div>
                         </a>
-                        <a href="#" class="rounded-icon lg:hidden">
-                            <div class="svg-icon">
-                                <svg><use xlink:href="#burger"></use></svg>
-                            </div>
-                        </a>
+                        <MobileBurger class="lg:hidden"></MobileBurger>
                     </div>
                 </div>
             </div>
@@ -50,11 +49,11 @@
                     <div></div>
                     <nav class="text-base leading-[1.3] font-medium hidden md:block">
                         <ul class="flex items-center justify-center gap-[30px]">
-                            <li><router-link :to="{name:'catalog'}" class="hover:underline">Каталог</router-link></li>
-                            <li><router-link :to="{name:'about'}" class="hover:underline">О нас</router-link></li>
-                            <li><router-link :to="{name:'articles'}" class="hover:underline">Новости</router-link></li>
-                            <li><router-link :to="{name:'delivery-and-payment'}" class="hover:underline">Доставка и оплата</router-link></li>
-                            <li><router-link :to="{name:'contacts'}" class="hover:underline">Контакты</router-link></li>
+                            <li><router-link :to="{name:'catalog'}" class="hover:text-brand">Каталог</router-link></li>
+                            <li><router-link :to="{name:'about'}" class="hover:text-brand">О нас</router-link></li>
+                            <li><router-link :to="{name:'articles'}" class="hover:text-brand">Новости</router-link></li>
+                            <li><router-link :to="{name:'delivery-and-payment'}" class="hover:text-brand">Доставка и оплата</router-link></li>
+                            <li><router-link :to="{name:'contacts'}" class="hover:text-brand">Контакты</router-link></li>
                         </ul>
                     </nav>
                     <AppSearch></AppSearch>

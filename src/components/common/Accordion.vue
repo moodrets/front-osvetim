@@ -22,7 +22,11 @@
 </template>
 
 <script lang="ts" setup>
-import { reactive } from 'vue';
+import { onBeforeMount, reactive } from 'vue';
+
+const props = defineProps<{
+    open?: boolean
+}>()
 
 const state = reactive({
     isOpen: false
@@ -31,12 +35,21 @@ const state = reactive({
 function onToggle() {
     state.isOpen = !state.isOpen
 }
+
+onBeforeMount(() => {
+    state.isOpen = props.open
+})
 </script>
 
 <style lang="scss">
 .app-acc {
     @apply
         mb-3
+        border-b
+        border-neutral
+        transition-all
+        duration-300
+        will-change-contents
     ;
 
     &__top {
@@ -47,8 +60,6 @@ function onToggle() {
             flex
             items-center
             py-2.5
-            border-b
-            border-neutral
             transition-all
             duration-300
         ;
@@ -58,13 +69,14 @@ function onToggle() {
         @apply
             pr-5
             flex-1
-            text-[36px]
-            lg:text-[48px]
+            text-[24px]
             leading-[1.0]
             tracking-[-0.96px]
             font-semibold
+            md:text-[36px]
+            lg:text-[48px]
         ;
-    }   
+    }
 
     &__body {
         @apply
@@ -80,7 +92,7 @@ function onToggle() {
 
     &.is-open {
         .app-acc__top {
-            @apply border-brand mb-5;
+            @apply mb-5;
         }
 
         .rounded-icon {
@@ -89,7 +101,7 @@ function onToggle() {
 
         .app-acc__body {
             grid-template-rows: 1fr;
-            @apply pb-4;
+            @apply pb-8;
         }
     }
 }
