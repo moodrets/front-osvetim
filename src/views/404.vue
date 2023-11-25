@@ -3,7 +3,7 @@
         <div class="centered">
             <div class="max-w-[400px] text-center mx-auto">
                 <h1>Страница не&nbsp;найдена</h1>
-                <div class="block-text mb-10">
+                <div class="text-style-base mb-10">
                     Пожалуйста, воспользуйтесь поиском по сайту или вернитесь на главную
                 </div>
                 <a href="/" class="app-button app-button--secondary">На главную</a>

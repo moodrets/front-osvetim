@@ -11,7 +11,7 @@ body {
 }
 
 .centered {
-    @apply max-w-[1440px] mx-auto px-4 md:px-16;
+    @apply w-[1440px] max-w-full mx-auto px-4 md:px-16;
 }
 
 [hidden] {
@@ -23,6 +23,7 @@ body {
 .is-active-link:not(.app-footer .is-active-link) {
     @apply text-brand;
 }
+
 .app-footer .is-active-link {
     @apply underline;
 }
@@ -32,5 +33,20 @@ a:not(a[class]) {
         text-brand
         hover:text-brand
         hover:underline
+    ;
+}
+
+.app-wrapper {
+    @apply 
+        flex
+        flex-col
+        min-h-[inherit]
+    ;
+}
+
+::selection {
+    @apply 
+        text-white
+        bg-brand
     ;
 }

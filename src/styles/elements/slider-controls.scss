@@ -1,0 +1,27 @@
+.slider-pagination {
+    @apply
+        absolute 
+        z-[10] 
+        left-0 
+        right-0 
+        bottom-8 
+        flex 
+        flex-wrap 
+        justify-center 
+        gap-1.5
+    ;
+
+    &__item {
+        @apply 
+            w-2.5
+            h-2.5
+            rounded-full
+            border-2
+            border-stone
+        ;
+
+        &[class*="active"] {
+            @apply bg-stone;
+        }
+    }
+}

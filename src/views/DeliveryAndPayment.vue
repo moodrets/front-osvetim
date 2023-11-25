@@ -8,17 +8,17 @@
                         <div class="p-5 bg-neutral-100 rounded-lg flex items-start xl:p-8">
                             <div class="flex-none mr-5 w-11 h-11 rounded-full border border-neutral flex items-center justify-center font-semibold uppercase text-[16px]">1</div>
                             <div class="flex-1 min-w-0">
-                                <div class="text-[28px] font-semibold mb-5 leading-[1.0]">Курьерская доставка:</div>
+                                <div class="text-[20px] font-semibold mb-5 leading-[1.0] lg:text-[28px]">Курьерская доставка:</div>
                                 <div class="mb-5">
-                                    <div class="text-[20px] font-semibold mb-1.5">Доставка по Санкт-Петербургу(в пределах КАД):</div>
-                                    <div class="block-text">
+                                    <div class="text-[16px] font-semibold mb-1.5 lg:text-[20px]">Доставка по Санкт-Петербургу(в пределах КАД):</div>
+                                    <div class="text-style-base">
                                         500 ₽ — при заказе от 1 000 ₽ до 3 000 ₽<br>
                                         Бесплатно — при заказе от 3 000 ₽
                                     </div>
                                 </div>
                                 <div>
-                                    <div class="text-[20px] font-semibold mb-1.5">Доставка по Ленинградской области:</div>
-                                    <div class="block-text">
+                                    <div class="text-[16px] font-semibold mb-1.5 lg:text-[20px]">Доставка по Ленинградской области:</div>
+                                    <div class="text-style-base">
                                         1000 ₽ — при заказе от 1000 до 10 000 ₽<br>
                                         Бесплатно — при заказе от 10 000 ₽
                                     </div>
@@ -28,16 +28,16 @@
                         <div class="p-5 bg-neutral-100 rounded-lg flex items-start xl:p-8">
                             <div class="flex-none mr-5 w-11 h-11 rounded-full border border-neutral flex items-center justify-center font-semibold uppercase text-[16px]">2</div>
                             <div class="flex-1 min-w-0">
-                                <div class="text-[28px] font-semibold mb-5 leading-[1.0]">Пункты выдачи СДЭК:</div>
+                                <div class="text-[20px] font-semibold mb-5 leading-[1.0] lg:text-[28px]">Пункты выдачи СДЭК:</div>
                                 <div class="mb-5">
-                                    <div class="text-[20px] font-semibold mb-1.5">Доставка по Санкт-Петербургу(в пределах КАД):</div>
-                                    <div class="block-text">
+                                    <div class="text-[16px] font-semibold mb-1.5 lg:text-[20px]">Доставка по Санкт-Петербургу(в пределах КАД):</div>
+                                    <div class="text-style-base">
                                         Бесплатно — при заказе от 3 000 ₽
                                     </div>
                                 </div>
                                 <div>
-                                    <div class="text-[20px] font-semibold mb-1.5">Доставка по России:</div>
-                                    <div class="block-text">
+                                    <div class="text-[16px] font-semibold mb-1.5 lg:text-[20px]">Доставка по России:</div>
+                                    <div class="text-style-base">
                                         Бесплатно — при заказе от 10 000 ₽
                                     </div>
                                 </div>
@@ -59,13 +59,13 @@
                         <div class="p-5 bg-neutral-100 rounded-lg flex items-start xl:p-8">
                             <div class="flex-none mr-5 w-11 h-11 rounded-full border border-neutral flex items-center justify-center font-semibold uppercase text-[16px]">1</div>
                             <div class="flex-1 min-w-0">
-                                <div class="text-[28px] font-semibold leading-[1.0]">Оплата при получении наличными или картой</div>
+                                <div class="text-[20px] font-semibold leading-[1.0] lg:text-[28px]">Оплата при получении наличными или картой</div>
                             </div>
                         </div>
                         <div class="p-5 bg-neutral-100 rounded-lg flex items-start xl:p-8">
                             <div class="flex-none mr-5 w-11 h-11 rounded-full border border-neutral flex items-center justify-center font-semibold uppercase text-[16px]">2</div>
                             <div class="flex-1 min-w-0">
-                                <div class="text-[28px] font-semibold leading-[1.0]">По предоплате на сайте через PayAnyWay</div>
+                                <div class="text-[20px] font-semibold leading-[1.0] lg:text-[28px]">По предоплате на сайте через PayAnyWay</div>
                             </div>
                         </div>
                     </div>

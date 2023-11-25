@@ -33,6 +33,10 @@
         </div>
     </main>
     <div id="contacts-map" class="grayscale overflow-hidden flex justify-center">
-        <img class="min-w-[800px] max-w-full" src="/contacts-map.png" alt="">
+        <img class="min-w-[800px] max-w-full" :src="`${routerPath}img/contacts-map.png`" alt="">
     </div>
 </template>
+
+<script lang="ts" setup>
+import { routerPath } from '@/reactive/RouterPath';
+</script>

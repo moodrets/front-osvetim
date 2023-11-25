@@ -10,10 +10,10 @@
                 >
                     <router-link class="absolute inset-0 z-[5]" :to="`articles/${article.id}`"></router-link>
                     <div class="text-[22px] font-semibold leading-[1.0] mb-4 md:text-[28px]">{{ article.title }}</div>
-                    <div class="block-text">{{ article.text }}</div>
+                    <div class="text-style-base">{{ article.text }}</div>
                     <div class="mt-auto flex items-end pt-10 md:pt-16">
                         <div class="w-[194px]">
-                            <img class="max-w-full" :src="`${routerPath}${article.img}`" alt="">
+                            <img class="max-w-full" :src="`${routerPath}img/${article.img}`" alt="">
                         </div>
                         <time class="text-[12px] uppercase  font-medium opacity-50 text-right flex-1 pl-3" :datetime="article.date">{{ article.date }}</time>
                     </div>

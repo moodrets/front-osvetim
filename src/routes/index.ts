@@ -11,6 +11,9 @@ import PublicOffer from '@/views/PublicOffer.vue'
 import DeliveryAndPayment from '@/views/DeliveryAndPayment.vue'
 import ArticlesList from '@/views/ArticlesList.vue'
 import ArticlesItem from '@/views/ArticlesItem.vue'
+import Login from '@/views/Login.vue'
+import PasswordRecovery from '@/views/PasswordRecovery.vue'
+import Registration from '@/views/Registration.vue'
 
 const routes: RouteRecordRaw[] = [
     {
@@ -21,6 +24,21 @@ const routes: RouteRecordRaw[] = [
                 path: '',
                 name: 'main',
                 component: Main,
+            },
+            {
+                path: 'login',
+                name: 'login',
+                component: Login,
+            },
+            {
+                path: 'password-recovery',
+                name: 'password-recovery',
+                component: PasswordRecovery,
+            },
+            {
+                path: 'registration',
+                name: 'registration',
+                component: Registration,
             },
             {
                 path: 'catalog',
@@ -55,6 +73,11 @@ const routes: RouteRecordRaw[] = [
             {
                 path: 'public-offer',
                 name: 'public-offer',
+                component: PublicOffer,
+            },
+            {
+                path: 'privacy-policy',
+                name: 'privacy-policy',
                 component: PublicOffer,
             },
         ]

@@ -1,11 +1,11 @@
 <template>
-    <footer class="app-footer bg-dark pt-5 py-3 text-white">
+    <footer class="app-footer bg-dark pt-5 py-3 text-white flex-none">
         <div class="centered">
             <div class="app-logo app-logo--footer select-none">
-                <a href="/"><img src="/logo-light.svg" alt="" /></a>
+                <a href="/"><img :src="`${routerPath}img/logo-light.svg`" alt="" /></a>
             </div>
             <div class="text-center mt-4 select-none">
-                <img class="max-w-[230px] lg:max-w-full inline-block" src="/slogan-light.svg" alt="" />
+                <img class="max-w-[230px] lg:max-w-full inline-block" :src="`${routerPath}img/slogan-light.svg`" alt="" />
             </div>
             <div class="flex items-start justify-center gap-2 mt-8 text-[14px] leading-[1.4] tracking-[-0.28px] md:justify-between lg:mt-20">
                 <div class="opacity-40 hidden md:block md:w-1/3">Навигация:</div>
@@ -73,9 +73,13 @@
                 </div>
                 <div class="md:w-1/3 md:text-center">© SDL SvetMarket 2023</div>
                 <div class="md:w-1/3 md:text-right">
-                    <a href="#" target="_blank" class="hover:underline">Политика конфиденциальности</a>
+                    <router-link :to="{name: 'privacy-policy'}" target="_blank" class="hover:underline">Политика конфиденциальности</router-link>
                 </div>
             </div>
         </div>
     </footer>
 </template>
+
+<script lang="ts" setup>
+import { routerPath } from '@/reactive/RouterPath';
+</script>

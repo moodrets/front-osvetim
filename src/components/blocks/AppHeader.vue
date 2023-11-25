@@ -1,12 +1,9 @@
-
-import MobileBurger from '../common/MobileBurger.vue';
-
 <template>
-    <header class="app-header sticky top-0 z-[100]">
+    <header class="app-header sticky top-0 z-[100] flex-none">
         <div class="app-header__top py-4 border-b border-neutral bg-white">
             <div class="centered flex items-center">
                 <div class="app-logo app-logo--header">
-                    <a href="/"><img src="/logo-dark.svg" alt=""></a>
+                    <router-link :to="{name: 'login'}"><img :src="`${routerPath}img/logo-dark.svg`" alt=""></router-link>
                 </div>
                 <div class="ml-auto flex items-center gap-[30px] pl-4">
                     <GeoPosition class="hidden lg:flex"></GeoPosition>
@@ -22,11 +19,11 @@ import MobileBurger from '../common/MobileBurger.vue';
                         </div>
                     </div>
                     <div class="flex-none flex items-center gap-1">
-                        <a href="#" class="rounded-icon">
+                        <router-link :to="{name: 'login'}" class="rounded-icon">
                             <div class="svg-icon">
                                 <svg><use xlink:href="#user"></use></svg>
                             </div>
-                        </a>
+                        </router-link>
                         <a href="#" class="rounded-icon">
                             <div class="svg-icon">
                                 <svg><use xlink:href="#heart"></use></svg>
@@ -62,3 +59,7 @@ import MobileBurger from '../common/MobileBurger.vue';
         </div>
     </header>
 </template>
+
+<script lang="ts" setup>
+import { routerPath } from '@/reactive/RouterPath';
+</script>
