@@ -9,7 +9,7 @@ export function initArticlesItemSlider(): Swiper {
         slidesPerView: 1,
         pagination: {
             el: '.swiper-pagination',
-            renderBullet(index, className) {
+            renderBullet(index: number, className: string) {
                 return `
                     <div class="slider-pagination__item ${className}"></div>
                 `
