@@ -1,7 +1,7 @@
 <template>
     <AppHeader></AppHeader>
     <router-view></router-view>
-    <template v-if="!['/login', '/registration', '/password-recovery'].includes($route.path)">
+    <template v-if="!authPaths.includes($route.path)">
         <Banner
             :img="`${routerPath}banners/banner-footer.png`"
         >
@@ -22,4 +22,13 @@ import AppFooter from '@/components/blocks/AppFooter.vue'
 import Subscribe from '@/components/blocks/Subscribe.vue'
 import Banner from '@/components/blocks/Banner.vue'
 import { routerPath } from '@/reactive/RouterPath';
+
+const authPaths = [
+    '/login',
+    '/registration',
+    '/password-recovery',
+    '/front-osvetim/login',
+    '/front-osvetim/registration',
+    '/front-osvetim/password-recovery',
+]
 </script>
