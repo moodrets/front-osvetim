@@ -29,12 +29,12 @@
                                 <svg><use xlink:href="#heart"></use></svg>
                             </div>
                         </a>
-                        <a href="#" class="rounded-icon hidden lg:flex">
+                        <router-link :to="{name: 'cart'}" class="rounded-icon hidden lg:flex">
                             <div class="svg-icon">
                                 <svg><use xlink:href="#cart"></use></svg>
                             </div>
-                            <div class="badge">7</div>
-                        </a>
+                            <div class="badge">4</div>
+                        </router-link>
                         <MobileBurger class="lg:hidden"></MobileBurger>
                     </div>
                 </div>
@@ -51,6 +51,7 @@
                             <li><router-link :to="{name:'articles'}" class="hover:text-brand">Новости</router-link></li>
                             <li><router-link :to="{name:'delivery-and-payment'}" class="hover:text-brand">Доставка и оплата</router-link></li>
                             <li><router-link :to="{name:'contacts'}" class="hover:text-brand">Контакты</router-link></li>
+                            <li><router-link :to="{name:'styles'}" class="hover:text-brand">Стили</router-link></li>
                         </ul>
                     </nav>
                     <AppSearch></AppSearch>

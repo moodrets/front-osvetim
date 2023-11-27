@@ -14,6 +14,9 @@ import ArticlesItem from '@/views/ArticlesItem.vue'
 import Login from '@/views/Login.vue'
 import PasswordRecovery from '@/views/PasswordRecovery.vue'
 import Registration from '@/views/Registration.vue'
+import Cart from '@/views/Cart.vue'
+import Order from '@/views/Order.vue'
+import Styles from '@/views/Styles.vue'
 
 const routes: RouteRecordRaw[] = [
     {
@@ -79,6 +82,21 @@ const routes: RouteRecordRaw[] = [
                 path: 'privacy-policy',
                 name: 'privacy-policy',
                 component: PublicOffer,
+            },
+            {
+                path: 'cart',
+                name: 'cart',
+                component: Cart,
+            },
+            {
+                path: 'order',
+                name: 'order',
+                component: Order,
+            },
+            {
+                path: 'styles',
+                name: 'styles',
+                component: Styles,
             },
         ]
     },

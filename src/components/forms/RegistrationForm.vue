@@ -7,19 +7,19 @@
             data-cooltipz-theme="danger"
             data-cooltipz-visible
         >
-            <input type="text" class="app-form-control" placeholder="Ваше имя">
+            <input type="text" class="app-form-control text-[16px] font-normal" placeholder="Ваше имя">
         </div>
         <div class="app-form-field mb-4">
-            <input type="email" class="app-form-control" placeholder="Эл. почта">
+            <input type="email" class="app-form-control text-[16px] font-normal" placeholder="Эл. почта">
         </div>
         <div class="app-form-field mb-4">
-            <input type="password" class="app-form-control" placeholder="Пароль">
+            <input type="password" class="app-form-control text-[16px] font-normal" placeholder="Пароль">
         </div>
         <div class="app-form-field mb-4">
-            <input type="password" class="app-form-control" placeholder="Повторите пароль">
+            <input type="password" class="app-form-control text-[16px] font-normal" placeholder="Повторите пароль">
         </div>
         <label class="mb-6 flex items-center text-[12px] text-black">
-            <div class="app-checkbox mr-2">
+            <div class="app-checkmark mr-2">
                 <input type="checkbox">
                 <div class="svg-icon">
                     <svg><use xlink:href="#checkmark"></use></svg>

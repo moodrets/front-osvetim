@@ -1,5 +1,5 @@
 <template>
-    <div class="app-offcanvas lg:hidden" :class="{'is-open': offcanvasVisible}" @click="clickHandler">
+    <div class="app-offcanvas" :class="{'is-open': offcanvasVisible}" @click="clickHandler">
         <div class="app-offcanvas__body">
             <slot></slot>
         </div>

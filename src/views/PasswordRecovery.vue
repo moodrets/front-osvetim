@@ -7,8 +7,7 @@
             <div class="h-full flex flex-col p-5 bg-white rounded-lg lg:max-w-[610px] lg:p-10">
                 <h1>Восстановление пароля</h1>
                 <div class="mb-8 text-dark text-opacity-40 font-semibold lg:mb-12">
-                    В первый раз здесь? 
-                    <router-link :to="{name: 'registration'}" class="text-inherit hover:underline">Зарегистрируйтесь</router-link>
+                    Укажите адрес эл. почты, который вы использовали при оформлении заказов. Мы вышлем вам инструкцию по восстановлению пароля.
                 </div>
                 <PasswordRecoveryForm></PasswordRecoveryForm>
                 <div class="mt-auto flex flex-wrap items-center gap-1">
