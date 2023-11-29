@@ -70,7 +70,7 @@
             </div>
             <div class="mb-4 flex gap-4 items-center">
                 <div class="app-checkmark">
-                    <input type="radio" name="demo">
+                    <input type="radio" checked name="demo">
                     <div class="svg-icon">
                         <svg><use xlink:href="#radio"></use></svg>
                     </div>

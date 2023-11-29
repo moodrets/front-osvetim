@@ -67,7 +67,7 @@
 
         &:disabled {
             @apply 
-                cursor-not-allowed
+                pointer-events-none
             ;
         }
 
@@ -86,8 +86,8 @@
 
         svg {
             @apply 
-                w-[55%]
-                h-[55%]
+                w-2.5
+                h-2.5
             ;
         }
     }

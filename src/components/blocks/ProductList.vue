@@ -12,7 +12,7 @@
             class="product-item relative"
             :class="product.addClass"
         >
-            <div class="relative mb-2.5 group min-h-[200px] bg-stone">
+            <div class="relative mb-2.5 group min-h-[156px] bg-neutral-100 lg:min-h-[310px]">
                 <div class="pointer-events-none absolute top-2 right-2 flex items-center gap-2 z-[10] md:top-4 md:right-4">
                     <div class="rounded-icon w-8 h-8 md:w-11 md:h-11">
                         <div class="svg-icon svg-icon--nostyle">
