@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "vue-tsc && vite build",
     "preview": "vite preview",
-    "deploy": "vue-tsc && vite build && gh-pages -d dist"
+    "copy-404": "cd dist && cp index.html 404.html && cd ..",
+    "deploy": "vue-tsc && vite build && npm run copy-404 && gh-pages -d dist"
   },
   "dependencies": {
     "cooltipz-css": "^2.3.0",

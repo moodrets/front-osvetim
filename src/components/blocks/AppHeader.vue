@@ -19,16 +19,16 @@
                         </div>
                     </div>
                     <div class="flex-none flex items-center gap-1">
-                        <router-link :to="{name: 'login'}" class="rounded-icon">
+                        <router-link :to="{name: 'orders-history'}" class="rounded-icon">
                             <div class="svg-icon">
                                 <svg><use xlink:href="#user"></use></svg>
                             </div>
                         </router-link>
-                        <a href="#" class="rounded-icon">
+                        <router-link :to="{name: 'favorites'}" class="rounded-icon">
                             <div class="svg-icon">
                                 <svg><use xlink:href="#heart"></use></svg>
                             </div>
-                        </a>
+                        </router-link>
                         <router-link :to="{name: 'cart'}" class="rounded-icon hidden lg:flex">
                             <div class="svg-icon">
                                 <svg><use xlink:href="#cart"></use></svg>
@@ -45,13 +45,13 @@
                 <div class="relative flex items-center justify-between py-2.5 min-h-[44px]">
                     <div></div>
                     <nav class="text-base leading-[1.3] font-medium hidden md:block">
-                        <ul class="flex items-center justify-center gap-[30px]">
-                            <li><router-link :to="{name:'catalog'}" class="hover:text-brand">Каталог</router-link></li>
-                            <li><router-link :to="{name:'about'}" class="hover:text-brand">О нас</router-link></li>
-                            <li><router-link :to="{name:'articles'}" class="hover:text-brand">Новости</router-link></li>
-                            <li><router-link :to="{name:'delivery-and-payment'}" class="hover:text-brand">Доставка и оплата</router-link></li>
-                            <li><router-link :to="{name:'contacts'}" class="hover:text-brand">Контакты</router-link></li>
-                            <li><router-link :to="{name:'styles'}" class="hover:text-brand">Стили</router-link></li>
+                        <ul class="flex items-center justify-center gap-5 lg:gap-8">
+                            <li><router-link :to="{name:'catalog'}" class="[&.is-active-link]:text-brand hover:text-brand">Каталог</router-link></li>
+                            <li><router-link :to="{name:'about'}" class="[&.is-active-link]:text-brand hover:text-brand">О нас</router-link></li>
+                            <li><router-link :to="{name:'articles'}" class="[&.is-active-link]:text-brand hover:text-brand">Новости</router-link></li>
+                            <li><router-link :to="{name:'delivery-and-payment'}" class="[&.is-active-link]:text-brand hover:text-brand">Доставка и оплата</router-link></li>
+                            <li><router-link :to="{name:'contacts'}" class="[&.is-active-link]:text-brand hover:text-brand">Контакты</router-link></li>
+                            <li><router-link :to="{name:'styles'}" class="[&.is-active-link]:text-brand hover:text-brand">Стили</router-link></li>
                         </ul>
                     </nav>
                     <AppSearch></AppSearch>

@@ -27,5 +27,5 @@
 </template>
 
 <script setup lang="ts">
-import SvgSprite from '@/components/common/SvgSprite.vue'
+import SvgSprite from '@/components/blocks/SvgSprite.vue'
 </script>

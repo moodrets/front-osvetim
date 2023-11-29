@@ -58,6 +58,7 @@
         }
 
         &:checked ~ .svg-icon,
+        &:focus-visible ~ .svg-icon,
         &:focus ~ .svg-icon {
             @apply border-brand;
         }

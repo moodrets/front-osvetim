@@ -15,7 +15,8 @@ import App from '@/App.vue'
 import GeoPosition from '@/components/common/GeoPosition.vue'
 import AppSearch from '@/components/common/AppSearch.vue'
 import Accordion from '@/components/common/Accordion.vue'
-import Pagination from '@/components/common/Pagination.vue'
+import Pagination from '@/components/blocks/Pagination.vue'
+import AppSort from '@/components/common/AppSort.vue'
 import MobileBurger from '@/components/common/MobileBurger.vue'
 import CartItemButtons from '@/components/common/CartItemButtons.vue'
 import Offcanvas from '@/components/common/Offcanvas.vue'
@@ -34,6 +35,7 @@ createApp(App)
     .component('GeoPosition', GeoPosition)
     .component('Accordion', Accordion)
     .component('Pagination', Pagination)
+    .component('AppSort', AppSort)
     .component('MobileBurger', MobileBurger)
     .component('Offcanvas', Offcanvas)
     .use(router)

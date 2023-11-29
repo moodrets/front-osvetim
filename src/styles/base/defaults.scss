@@ -14,14 +14,6 @@ body {
     @apply hidden;
 }
 
-.is-active-link:not(.app-footer .is-active-link):not(.app-button) {
-    @apply text-brand;
-}
-
-.app-footer .is-active-link {
-    @apply underline;
-}
-
 a:not(a[class]) {
     @apply
         text-brand

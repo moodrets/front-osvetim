@@ -19,7 +19,7 @@
                     </div>
                 </article>
             </div>
-            <Pagination class="mt-12"></Pagination>
+            <Pagination class="mt-12 justify-center"></Pagination>
         </section>
     </main>
 </template>

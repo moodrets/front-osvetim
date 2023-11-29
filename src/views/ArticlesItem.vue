@@ -22,7 +22,7 @@
                                 <img :src="`${routerPath}img/article-item-slide.png`" alt="">
                             </div>
                         </div>
-                        <div class="swiper-pagination slider-pagination"></div>
+                        <div class="slider-pagination"></div>
                     </div>
 
                 </div>

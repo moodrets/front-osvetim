@@ -26,11 +26,11 @@
             <div class="flex flex-col items-center gap-2 mt-8 pt-8 border-t border-neutral border-opacity-40 md:flex-row md:mt-20 md:justify-between md:border-none md:pt-0">
                 <nav class="hidden md:block md:w-1/3">
                     <ul class="text-[14px] leading-[1.4] tracking-[-0.28px]">
-                        <li><router-link :to="{name:'catalog'}" class="hover:underline">Каталог</router-link></li>
-                        <li><router-link :to="{name:'about'}" class="hover:underline">О нас</router-link></li>
-                        <li><router-link :to="{name:'articles'}" class="hover:underline">Новости</router-link></li>
-                        <li><router-link :to="{name:'delivery-and-payment'}" class="hover:underline">Доставка и оплата</router-link></li>
-                        <li><router-link :to="{name:'contacts'}" class="hover:underline">Контакты</router-link></li>
+                        <li><router-link :to="{name:'catalog'}" class="[&.is-active-link]:underline hover:underline">Каталог</router-link></li>
+                        <li><router-link :to="{name:'about'}" class="[&.is-active-link]:underline hover:underline">О нас</router-link></li>
+                        <li><router-link :to="{name:'articles'}" class="[&.is-active-link]:underline hover:underline">Новости</router-link></li>
+                        <li><router-link :to="{name:'delivery-and-payment'}" class="[&.is-active-link]:underline hover:underline">Доставка и оплата</router-link></li>
+                        <li><router-link :to="{name:'contacts'}" class="[&.is-active-link]:underline hover:underline">Контакты</router-link></li>
                     </ul>
                 </nav>
                 <div class="flex flex-col items-center md:w-1/3">
@@ -73,7 +73,7 @@
                 </div>
                 <div class="md:w-1/3 md:text-center">© SDL SvetMarket 2023</div>
                 <div class="md:w-1/3 md:text-right">
-                    <router-link :to="{name: 'privacy-policy'}" target="_blank" class="hover:underline">Политика конфиденциальности</router-link>
+                    <router-link :to="{name: 'privacy-policy'}" class="hover:underline">Политика конфиденциальности</router-link>
                 </div>
             </div>
         </div>

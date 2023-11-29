@@ -21,7 +21,7 @@ import AppHeader from '@/components/blocks/AppHeader.vue'
 import AppFooter from '@/components/blocks/AppFooter.vue'
 import Subscribe from '@/components/blocks/Subscribe.vue'
 import Banner from '@/components/blocks/Banner.vue'
-import { routerPath } from '@/reactive/RouterPath';
+import { routerPath } from '@/reactive/RouterPath'
 
 const authPaths = [
     '/login',

@@ -49,9 +49,7 @@ function onToggleSearch() {
     }
 }
 
-function onSubmit() {
-    
-}
+async function onSubmit() {}
 </script>
 
 <style lang="scss">

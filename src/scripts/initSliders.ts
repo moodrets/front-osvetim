@@ -8,7 +8,7 @@ export function initArticlesItemSlider(): Swiper {
         spaceBetween: 20,
         slidesPerView: 1,
         pagination: {
-            el: '.swiper-pagination',
+            el: '.slider-pagination',
             renderBullet(index: number, className: string) {
                 return `
                     <div class="slider-pagination__item ${className}"></div>

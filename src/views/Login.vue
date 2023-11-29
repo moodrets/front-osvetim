@@ -1,6 +1,6 @@
 <template>
     <div 
-        class="py-8 flex-1 flex bg-no-repeat bg-cover bg-center"
+        class="py-8 flex-1 flex bg-no-repeat bg-cover bg-center bg-dark"
         :style="{'background-image': `url(${routerPath}img/login-bg.png)`}"
     >
         <div class="centered">
