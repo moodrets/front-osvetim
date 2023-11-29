@@ -54,6 +54,8 @@
             @apply 
                 scale-100 
                 opacity-100
+                pointer-events-none
+                cursor-crosshair
             ;
         }
 
@@ -61,6 +63,12 @@
         &:focus-visible ~ .svg-icon,
         &:focus ~ .svg-icon {
             @apply border-brand;
+        }
+
+        &:disabled {
+            @apply 
+                cursor-not-allowed
+            ;
         }
 
         &:disabled ~ .svg-icon {
@@ -78,8 +86,8 @@
 
         svg {
             @apply 
-                w-1/2
-                h-1/2
+                w-[55%]
+                h-[55%]
             ;
         }
     }
@@ -111,7 +119,6 @@
     &.is-error {
         @apply 
             border-red-400
-            border-b-2
         ;
     }
 }

@@ -59,6 +59,7 @@
         ;
     }
 
+    &.disabled,
     &[disabled] {
         @apply 
             opacity-50 

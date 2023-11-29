@@ -8,7 +8,7 @@
                 </div>
             </div>
         </div>
-        <div class="app-sort__dropdown">
+        <div class="app-sort__dropdown" v-if="state.sortList.length">
             <ul>
                 <li
                     v-for="(item, itemIndex) in state.sortList"
@@ -22,8 +22,7 @@
 </template>
 
 <script setup lang="ts">
-import { computed } from '@vue/reactivity';
-import { onMounted, onUnmounted, reactive } from 'vue'
+import { onMounted, onUnmounted, reactive, computed } from 'vue'
 
 interface SortItem {
     current: boolean,
@@ -96,7 +95,8 @@ onUnmounted(() => {
         z-[50]
         text-[16px] 
         font-semibold 
-        tracking-[-0.32px] 
+        tracking-[-0.32px]
+        select-none
     ;
 
     &__current {
@@ -106,7 +106,6 @@ onUnmounted(() => {
             flex 
             items-center 
             gap-2
-            select-none
         ;
     }
 
