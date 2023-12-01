@@ -67,13 +67,13 @@ onBeforeMount(() => {
 
     &__title {
         @apply
-            pr-5
+            pr-2
             flex-1
-            text-[24px]
+            text-[20px]
             leading-[1.0]
             tracking-[-0.96px]
             font-semibold
-            md:text-[36px]
+            md:text-[35px]
             lg:text-[48px]
         ;
     }
@@ -88,6 +88,15 @@ onBeforeMount(() => {
             leading-normal
         ;
         grid-template-rows: 0fr;
+    }
+
+    .rounded-icon {
+        @apply 
+            w-8
+            h-8
+            md:w-11
+            md:h-11
+        ;
     }
 
     &.is-open {

@@ -8,16 +8,16 @@
                         <div class="p-5 bg-neutral-100 rounded-lg flex items-start xl:p-8">
                             <div class="flex-none mr-5 w-11 h-11 rounded-full border border-neutral flex items-center justify-center font-semibold uppercase text-[16px]">1</div>
                             <div class="flex-1 min-w-0">
-                                <div class="text-[20px] font-semibold mb-5 leading-[1.0] lg:text-[28px]">Курьерская доставка:</div>
+                                <div class="font-semibold mb-5 leading-[1.0] lg:text-[28px]">Курьерская доставка:</div>
                                 <div class="mb-5">
-                                    <div class="text-[16px] font-semibold mb-1.5 lg:text-[20px]">Доставка по Санкт-Петербургу(в пределах КАД):</div>
+                                    <div class="font-semibold mb-1.5 lg:text-[20px]">Доставка по Санкт-Петербургу(в пределах КАД):</div>
                                     <div class="text-style-base">
                                         500 ₽ — при заказе от 1 000 ₽ до 3 000 ₽<br>
                                         Бесплатно — при заказе от 3 000 ₽
                                     </div>
                                 </div>
                                 <div>
-                                    <div class="text-[16px] font-semibold mb-1.5 lg:text-[20px]">Доставка по Ленинградской области:</div>
+                                    <div class="font-semibold mb-1.5 lg:text-[20px]">Доставка по Ленинградской области:</div>
                                     <div class="text-style-base">
                                         1000 ₽ — при заказе от 1000 до 10 000 ₽<br>
                                         Бесплатно — при заказе от 10 000 ₽
@@ -28,15 +28,15 @@
                         <div class="p-5 bg-neutral-100 rounded-lg flex items-start xl:p-8">
                             <div class="flex-none mr-5 w-11 h-11 rounded-full border border-neutral flex items-center justify-center font-semibold uppercase text-[16px]">2</div>
                             <div class="flex-1 min-w-0">
-                                <div class="text-[20px] font-semibold mb-5 leading-[1.0] lg:text-[28px]">Пункты выдачи СДЭК:</div>
+                                <div class="font-semibold mb-5 leading-[1.0] lg:text-[28px]">Пункты выдачи СДЭК:</div>
                                 <div class="mb-5">
-                                    <div class="text-[16px] font-semibold mb-1.5 lg:text-[20px]">Доставка по Санкт-Петербургу(в пределах КАД):</div>
+                                    <div class="font-semibold mb-1.5 lg:text-[20px]">Доставка по Санкт-Петербургу(в пределах КАД):</div>
                                     <div class="text-style-base">
                                         Бесплатно — при заказе от 3 000 ₽
                                     </div>
                                 </div>
                                 <div>
-                                    <div class="text-[16px] font-semibold mb-1.5 lg:text-[20px]">Доставка по России:</div>
+                                    <div class="font-semibold mb-1.5 lg:text-[20px]">Доставка по России:</div>
                                     <div class="text-style-base">
                                         Бесплатно — при заказе от 10 000 ₽
                                     </div>
@@ -59,13 +59,13 @@
                         <div class="p-5 bg-neutral-100 rounded-lg flex items-start xl:p-8">
                             <div class="flex-none mr-5 w-11 h-11 rounded-full border border-neutral flex items-center justify-center font-semibold uppercase text-[16px]">1</div>
                             <div class="flex-1 min-w-0">
-                                <div class="text-[20px] font-semibold leading-[1.0] lg:text-[28px]">Оплата при получении наличными или картой</div>
+                                <div class="font-semibold leading-[1.0] lg:text-[28px]">Оплата при получении наличными или картой</div>
                             </div>
                         </div>
                         <div class="p-5 bg-neutral-100 rounded-lg flex items-start xl:p-8">
                             <div class="flex-none mr-5 w-11 h-11 rounded-full border border-neutral flex items-center justify-center font-semibold uppercase text-[16px]">2</div>
                             <div class="flex-1 min-w-0">
-                                <div class="text-[20px] font-semibold leading-[1.0] lg:text-[28px]">По предоплате на сайте через PayAnyWay</div>
+                                <div class="font-semibold leading-[1.0] lg:text-[28px]">По предоплате на сайте через PayAnyWay</div>
                             </div>
                         </div>
                     </div>
@@ -107,61 +107,61 @@
                 <template #title>Реквизиты</template>
                 <template #body>
                     <div class="lg:columns-2">
-                        <div class="opacity-80 mb-3 lg:pr-5 lg:inline-block lg:w-full">
-                            <div class="text-[20px] font-semibold">Полное наименование:</div>
-                            <div class="text-base">Общество с ограниченной ответственностью «Большой свет»</div>
+                        <div class="opacity-80 mb-3 text-[14px] md:text-base lg:pr-5 lg:inline-block lg:w-full">
+                            <div class="font-semibold">Полное наименование:</div>
+                            <div>Общество с ограниченной ответственностью «Большой свет»</div>
                         </div>
                         <div class="opacity-80 mb-3 lg:pr-5 lg:inline-block lg:w-full">
-                            <div class="text-[20px] font-semibold">Сокращенное наименование:</div>
-                            <div class="text-base">ООО «Большой свет»</div>
+                            <div class="font-semibold">Сокращенное наименование:</div>
+                            <div>ООО «Большой свет»</div>
                         </div>
                         <div class="opacity-80 mb-3 lg:pr-5 lg:inline-block lg:w-full">
-                            <div class="text-[20px] font-semibold">Юридический адрес:</div>
-                            <div class="text-base">194355, Российская Федерация, г. Санкт-Петербург, ул. Композиторов, д. 12, литер А, пом. 54-Н:</div>
+                            <div class="font-semibold">Юридический адрес:</div>
+                            <div>194355, Российская Федерация, г. Санкт-Петербург, ул. Композиторов, д. 12, литер А, пом. 54-Н:</div>
                         </div>
                         <div class="opacity-80 mb-3 lg:pr-5 lg:inline-block lg:w-full">
-                            <div class="text-[20px] font-semibold">Часы работыЦ:</div>
-                            <div class="text-base">пн-пт 10:00–19:00; сб 12:00–18:00; воскресенье - выходной</div>
+                            <div class="font-semibold">Часы работы:</div>
+                            <div>пн-пт 10:00–19:00; сб 12:00–18:00; воскресенье - выходной</div>
                         </div>
                         <div class="opacity-80 mb-3 lg:pr-5 lg:inline-block lg:w-full">
-                            <div class="text-[20px] font-semibold">Почтовый адрес:</div>
-                            <div class="text-base">194355, Российская Федерация, г. Санкт-Петербург, ул. Композиторов, д. 12, литер А, пом. 54-Н:</div>
+                            <div class="font-semibold">Почтовый адрес:</div>
+                            <div>194355, Российская Федерация, г. Санкт-Петербург, ул. Композиторов, д. 12, литер А, пом. 54-Н:</div>
                         </div>
                         <div class="opacity-80 mb-3 lg:pr-5 lg:inline-block lg:w-full">
-                            <div class="text-[20px] font-semibold">Телефон/факс:</div>
-                            <div class="text-base">8 (950) 007-04-14</div>
+                            <div class="font-semibold">Телефон/факс:</div>
+                            <div>8 (950) 007-04-14</div>
                         </div>
                         <div class="opacity-80 mb-3 lg:pr-5 lg:inline-block lg:w-full">
-                            <div class="text-[20px] font-semibold">ИНН/КПП:</div>
-                            <div class="text-base">7802707654 / 780201001</div>
+                            <div class="font-semibold">ИНН/КПП:</div>
+                            <div>7802707654 / 780201001</div>
                         </div>
                         <div class="opacity-80 mb-3 lg:pr-5 lg:inline-block lg:w-full">
-                            <div class="text-[20px] font-semibold">ОГРН:</div>
-                            <div class="text-base">1207800064746</div>
+                            <div class="font-semibold">ОГРН:</div>
+                            <div>1207800064746</div>
                         </div>
                         <div class="opacity-80 mb-3 lg:pr-5 lg:inline-block lg:w-full">
-                            <div class="text-[20px] font-semibold">Расчётный счет:</div>
-                            <div class="text-base">40702810155000046212</div>
+                            <div class="font-semibold">Расчётный счет:</div>
+                            <div>40702810155000046212</div>
                         </div>
                         <div class="opacity-80 mb-3 lg:pr-5 lg:inline-block lg:w-full">
-                            <div class="text-[20px] font-semibold">Корреспондентский счет:</div>
-                            <div class="text-base">30101810500000000653</div>
+                            <div class="font-semibold">Корреспондентский счет:</div>
+                            <div>30101810500000000653</div>
                         </div>
                         <div class="opacity-80 mb-3 lg:pr-5 lg:inline-block lg:w-full">
-                            <div class="text-[20px] font-semibold">БИК банка:</div>
-                            <div class="text-base">044030653</div>
+                            <div class="font-semibold">БИК банка:</div>
+                            <div>044030653</div>
                         </div>
                         <div class="opacity-80 mb-3 lg:pr-5 lg:inline-block lg:w-full">
-                            <div class="text-[20px] font-semibold">Банк:</div>
-                            <div class="text-base">СЕВЕРО-ЗАПАДНЫЙ БАНК ПАО СБЕРБАНК г. Санкт-Петербург</div>
+                            <div class="font-semibold">Банк:</div>
+                            <div>СЕВЕРО-ЗАПАДНЫЙ БАНК ПАО СБЕРБАНК г. Санкт-Петербург</div>
                         </div>
                         <div class="opacity-80 mb-3 lg:pr-5 lg:inline-block lg:w-full">
-                            <div class="text-[20px] font-semibold">Директор:</div>
-                            <div class="text-base">Михайловская Ольга Андреевна (Действует на основании Устава)</div>
+                            <div class="font-semibold">Директор:</div>
+                            <div>Михайловская Ольга Андреевна (Действует на основании Устава)</div>
                         </div>
                         <div class="opacity-80 mb-3 lg:pr-5 lg:inline-block lg:w-full">
-                            <div class="text-[20px] font-semibold">E-mail:</div>
-                            <div class="text-base">info@sdlgroup.ru</div>
+                            <div class="font-semibold">E-mail:</div>
+                            <div>info@sdlgroup.ru</div>
                         </div>
                     </div>
                 </template>

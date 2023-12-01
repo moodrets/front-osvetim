@@ -33,9 +33,10 @@
                         </div>
 
                         <div>
-                            <router-link class="app-button app-button--secondary" :to="{'name': 'order'}">
-                                Оформить заказ
-                            </router-link>
+                            <router-link 
+                                class="app-button app-button--secondary" 
+                                :to="{'name': 'order-success'}"
+                            >Оформить заказ</router-link>
                         </div>
                     </div>
 
@@ -48,6 +49,4 @@
 
 <script setup lang="ts">
 import OrderForm from '@/components/forms/OrderForm.vue';
-
-
 </script>

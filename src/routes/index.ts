@@ -19,6 +19,7 @@ import Registration from '@/views/Registration.vue'
 import Cart from '@/views/Cart.vue'
 import Order from '@/views/Order.vue'
 import OrdersHistory from '@/views/OrdersHistory.vue'
+import OrderSuccess from '@/views/OrderSuccess.vue'
 import PersonalData from '@/views/PersonalData.vue'
 import PersonalPassword from '@/views/PersonalPassword.vue'
 import Favorites from '@/views/Favorites.vue'
@@ -112,6 +113,11 @@ const routes: RouteRecordRaw[] = [
                 path: 'orders-history',
                 name: 'orders-history',
                 component: OrdersHistory,
+            },
+            {
+                path: 'order-success',
+                name: 'order-success',
+                component: OrderSuccess,
             },
             {
                 path: 'personal-data',

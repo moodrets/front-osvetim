@@ -17,8 +17,8 @@
         hover:ring-1
         hover:border-brand
         hover:ring-brand
-        [&.is-active-link]:border-brand
         [&.is-active-link]:ring-1
+        [&.is-active-link]:border-brand
         [&.is-active-link]:ring-brand
     ;
 

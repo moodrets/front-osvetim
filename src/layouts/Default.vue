@@ -27,8 +27,10 @@ const authPaths = [
     '/login',
     '/registration',
     '/password-recovery',
+    '/order-success',
     '/front-osvetim/login',
     '/front-osvetim/registration',
     '/front-osvetim/password-recovery',
+    '/front-osvetim/order-success',
 ]
 </script>
