@@ -24,6 +24,8 @@ import LoginForm from '@/components/forms/LoginForm.vue'
 import RegistrationForm from '@/components/forms/RegistrationForm.vue'
 import PasswordRecoveryForm from '@/components/forms/PasswordRecoveryForm.vue'
 import OrderForm from '@/components/forms/OrderForm.vue'
+import PersonalDataForm from '@/components/forms/PersonalDataForm.vue'
+import PersonalPasswordForm from '@/components/forms/PersonalPasswordForm.vue'
 
 createApp(App)
     .component('CartItemButtons', CartItemButtons)
@@ -31,6 +33,8 @@ createApp(App)
     .component('RegistrationForm', RegistrationForm)
     .component('PasswordRecoveryForm', PasswordRecoveryForm)
     .component('OrderForm', OrderForm)
+    .component('PersonalDataForm', PersonalDataForm)
+    .component('PersonalPasswordForm', PersonalPasswordForm)
     .component('AppSearch', AppSearch)
     .component('GeoPosition', GeoPosition)
     .component('Accordion', Accordion)

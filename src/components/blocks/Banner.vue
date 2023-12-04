@@ -5,7 +5,7 @@
             :style="{'background-image': `url(${img})`}"
         ></div>
         <div class="absolute z-2 left-5 right-5 top-5 h-[1px] bg-white bg-opacity-30 pointer-events-none transition-all duration-[0.4s] group-hover:bg-opacity-100 md:right-16 md:left-16"></div>
-        <div class="text-center relative z-5 max-w-[460px]">
+        <div class="text-center relative z-5 max-w-[480px] px-4">
             <slot></slot>
         </div>
     </div>

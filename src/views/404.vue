@@ -6,7 +6,7 @@
                 <div class="text-style-base mb-10">
                     Пожалуйста, воспользуйтесь поиском по сайту или вернитесь на главную
                 </div>
-                <a href="/" class="app-button app-button--secondary">На главную</a>
+                <router-link :to="{name: 'main'}" class="app-button app-button--secondary">На главную</router-link>
             </div>
         </div>
     </main>
