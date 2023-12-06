@@ -1,38 +1,3 @@
-/*
-.svg-icon {
-    flex: none;
-    width: 24px;
-    height: 24px;
-    display: inline-block;
-    fill: currentColor;
-    @apply 
-        flex-none
-        w-6
-        h-6
-        inline-block
-        fill-[currentColor]
-    ;
-
-    svg {
-        display: block;
-        width: inherit;
-        height: inherit;
-        fill: inherit;
-        stroke: inherit;
-    }
-
-    &--stroke {
-        fill: none;
-        stroke: currentColor;
-    }
-
-    &--nostyle {
-       fill: none;
-       stroke: none;
-    }
-}
-*/
-
 .svg-icon {
     @apply 
         flex-none

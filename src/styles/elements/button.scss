@@ -1,4 +1,5 @@
 .app-button {
+    -webkit-tap-highlight-color: transparent;
     @apply
         select-none
         flex-none
@@ -22,7 +23,7 @@
         transition-all
         duration-100
         focus-visible:scale-[1.05]
-        active:scale-[1.05]
+        active:scale-[1.03]
     ;
 
     &--primary {

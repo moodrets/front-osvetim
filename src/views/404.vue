@@ -9,5 +9,10 @@
                 <router-link :to="{name: 'main'}" class="app-button app-button--secondary">На главную</router-link>
             </div>
         </div>
+        <NotFoundPageSlider class="mt-10"></NotFoundPageSlider> 
     </main>
 </template>
+
+<script setup lang="ts">
+import NotFoundPageSlider from '@/components/blocks/NotFoundPageSlider.vue'
+</script>

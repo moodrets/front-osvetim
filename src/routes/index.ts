@@ -23,6 +23,8 @@ import OrderSuccess from '@/views/OrderSuccess.vue'
 import PersonalData from '@/views/PersonalData.vue'
 import PersonalPassword from '@/views/PersonalPassword.vue'
 import Favorites from '@/views/Favorites.vue'
+import Catalog from '@/views/Catalog.vue'
+import ProductView from '@/views/ProductView.vue'
 
 const routes: RouteRecordRaw[] = [
     {
@@ -52,12 +54,12 @@ const routes: RouteRecordRaw[] = [
             {
                 path: 'catalog',
                 name: 'catalog',
-                component: Main,
+                component: Catalog,
             },
             {
                 path: 'catalog/:id',
                 name: 'product-item',
-                component: Main,
+                component: ProductView,
             },
             {
                 path: 'about',

@@ -25,3 +25,39 @@
         }
     }
 }
+
+.slider-prev,
+.slider-next {
+    @apply 
+        cursor-pointer
+        absolute
+        top-1/2
+        -translate-y-1/2
+        z-10
+        text-stone
+        p-3
+    ;
+
+    .svg-icon {
+        @apply
+            w-4
+            h-4
+            block
+        ;
+    }
+
+    &[class*="disabled"] {
+        @apply 
+            pointer-events-none
+            opacity-40
+        ;
+    }
+}
+
+.slider-prev {
+    @apply left-0;
+}
+
+.slider-next {
+    @apply right-0;
+}
