@@ -54,8 +54,6 @@ function onChangeTab(key: string | number) {
 
 onMounted(() => {
     state.activeKey = props.activeKey || props.items[0].key
-    console.log(state.activeKey);
-    
 })
 </script>
 

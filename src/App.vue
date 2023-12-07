@@ -1,6 +1,5 @@
 <template>
 	<router-view />
-	<SvgSprite />
 	<Offcanvas class="lg:hidden">
 		<nav class="mb-8">
 			<ul class="flex flex-col gap-2">
@@ -24,6 +23,7 @@
 			</div>
 		</div>
 	</Offcanvas>
+	<SvgSprite />
 </template>
 
 <script setup lang="ts">

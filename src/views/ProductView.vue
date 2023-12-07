@@ -5,7 +5,7 @@
             <div class="mb-10 md:flex lg:mb-24">
                 <div class="flex-none md:w-[310px] lg:w-[400px] xl:w-[640px]">
 
-                    <div class="swiper js-product-item-slider">
+                    <div class="swiper js-product-item-slider select-none">
                         <div class="pointer-events-none absolute top-4 right-4 flex items-center gap-2 z-[10]">
                             <div class="rounded-icon">
                                 <div class="svg-icon svg-icon--nostyle">
@@ -75,7 +75,7 @@
                     </div>
 
                     <a
-                        v-scroll-to="{target: '#product-chars', offset: 150}"
+                        v-scroll-to="{target: '#product-chars', offsetY: 140}"
                         href="#"
                         class="underline text-[14px] font-semibold leading-[1.1] tracking-[-0.28px] flex items-end justify-between lg:text-[20px]"
                     >Все характеристики</a>
@@ -105,7 +105,7 @@
                 </div>
             </div>
 
-            <div id="product-chars" class="pt-5 border-t border-neutral">
+            <div id="product-chars" class="pt-5 border-t border-neutral-alpha">
                 <div class="h1">Характеристики</div>
 
                 <AppTabs
@@ -176,15 +176,40 @@
                 </AppTabs>
 
             </div>
+
+            <div class="mt-8 pt-5 border-t border-neutral-alpha lg:mt-20">
+                <div class="flex flex-col items-start gap-4 mb-8 md:mb-14 md:items-center md:justify-between md:flex-row">
+                    <div class="h1 mb-0">Товары из коллекции</div>
+                    <a href="#" class="app-button app-button--secondary">Смотреть все</a>
+                </div>
+                <ProductList
+                    :columns="4"
+                    :list="productListFromCollection" 
+                />
+            </div>
+
+            <div class="mt-8 pt-5 border-t border-neutral-alpha lg:mt-20">
+                <div class="flex flex-col items-start gap-4 mb-8 md:mb-14 md:items-center md:justify-between md:flex-row">
+                    <div class="h1 mb-0">Товары из категории</div>
+                    <a href="#" class="app-button app-button--secondary">Смотреть все</a>
+                </div>
+                <ProductList 
+                    :columns="4"
+                    :list="productListFromCategory"
+                />
+            </div>
+
         </div>
     </main>
 </template>
 
 <script setup lang="ts">
-import { onMounted, onUnmounted, ref } from 'vue';
 import Swiper from 'swiper';
+import { onMounted, onUnmounted, ref } from 'vue';
 import { initProductItemSlider } from '@/scripts/initSliders';
 import { routerPath } from '@/reactive/RouterPath';
+import ProductList from '@/components/blocks/ProductList.vue'
+import { productListFromCollection, productListFromCategory } from '@/reactive/ProductsLists'
 
 let slider: Swiper | null = null
 

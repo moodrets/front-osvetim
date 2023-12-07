@@ -15,7 +15,10 @@
                     ]"
                 />
             </div>
-            <ProductList :columns="4" />
+            <ProductList
+                :list="productListFavorites"
+                :columns="4" 
+            />
             <Pagination class="justify-center mt-10 lg:mt-14" />
         </div>
     </main>
@@ -23,4 +26,5 @@
 
 <script setup lang="ts">
 import ProductList from '@/components/blocks/ProductList.vue'
+import { productListFavorites } from '@/reactive/ProductsLists';
 </script>
