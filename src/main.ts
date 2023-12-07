@@ -15,7 +15,8 @@ import { createApp } from 'vue'
 import router from '@/routes'
 
 // vue directives
-import ScrollToDirective from '@/directives/scrollTo'
+import ScrollToDirective from '@/directives/ScrollTo'
+import ModalDirective from '@/directives/Modal'
 
 // vue global components
 import App from '@/App.vue'
@@ -28,6 +29,7 @@ import AppSort from '@/components/common/AppSort.vue'
 import MobileBurger from '@/components/common/MobileBurger.vue'
 import CountButtons from '@/components/common/CountButtons.vue'
 import Offcanvas from '@/components/common/Offcanvas.vue'
+import AppModal from '@/components/common/AppModal.vue'
 import LoginForm from '@/components/forms/LoginForm.vue'
 import RegistrationForm from '@/components/forms/RegistrationForm.vue'
 import PasswordRecoveryForm from '@/components/forms/PasswordRecoveryForm.vue'
@@ -37,6 +39,7 @@ import PersonalPasswordForm from '@/components/forms/PersonalPasswordForm.vue'
 
 createApp(App)
     .directive('scroll-to', ScrollToDirective)
+    .directive('modal-call', ModalDirective)
     .component('CountButtons', CountButtons)
     .component('LoginForm', LoginForm)
     .component('RegistrationForm', RegistrationForm)
@@ -52,8 +55,9 @@ createApp(App)
     .component('AppSort', AppSort)
     .component('MobileBurger', MobileBurger)
     .component('Offcanvas', Offcanvas)
+    .component('AppModal', AppModal)
     .use(router)
-    .mount('#app')
+.mount('#app')
 
 /** 
  * Раскоментить когда сайт будет на laravel

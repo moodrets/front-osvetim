@@ -1,5 +1,5 @@
 <template>
-    <div class="flex items-center text-base font-medium cursor-pointer">
+    <div class="flex items-center font-medium cursor-pointer">
         <div class="svg-icon mr-[2px]" :class="iconClass">
             <svg><use xlink:href="#geo"></use></svg>
         </div>

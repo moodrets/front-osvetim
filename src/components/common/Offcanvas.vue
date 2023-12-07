@@ -1,5 +1,10 @@
 <template>
-    <div class="app-offcanvas" :class="{'is-open': offcanvasVisible}" @click="clickHandler">
+    <div
+        v-cloak 
+        class="app-offcanvas" 
+        :class="{'is-open': offcanvasVisible}" 
+        @click="clickHandler"
+    >
         <div class="app-offcanvas__body">
             <slot></slot>
         </div>

@@ -23,6 +23,12 @@
 			</div>
 		</div>
 	</Offcanvas>
+	<AppModal ref="testModal">
+		<div class="h2">Заголовок</div>
+		<p>
+			Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis enim quo at fugiat ab quaerat quas odit, tenetur suscipit esse placeat quidem delectus doloribus dolorum. Obcaecati quia tenetur molestiae aspernatur.
+		</p>
+	</AppModal>
 	<SvgSprite />
 </template>
 

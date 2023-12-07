@@ -111,55 +111,55 @@
                             <div class="font-semibold">Полное наименование:</div>
                             <div>Общество с ограниченной ответственностью «Большой свет»</div>
                         </div>
-                        <div class="opacity-80 mb-3 lg:pr-5 lg:inline-block lg:w-full">
+                        <div class="opacity-80 mb-3 text-[14px] md:text-base lg:pr-5 lg:inline-block lg:w-full">
                             <div class="font-semibold">Сокращенное наименование:</div>
                             <div>ООО «Большой свет»</div>
                         </div>
-                        <div class="opacity-80 mb-3 lg:pr-5 lg:inline-block lg:w-full">
+                        <div class="opacity-80 mb-3 text-[14px] md:text-base lg:pr-5 lg:inline-block lg:w-full">
                             <div class="font-semibold">Юридический адрес:</div>
                             <div>194355, Российская Федерация, г. Санкт-Петербург, ул. Композиторов, д. 12, литер А, пом. 54-Н:</div>
                         </div>
-                        <div class="opacity-80 mb-3 lg:pr-5 lg:inline-block lg:w-full">
+                        <div class="opacity-80 mb-3 text-[14px] md:text-base lg:pr-5 lg:inline-block lg:w-full">
                             <div class="font-semibold">Часы работы:</div>
                             <div>пн-пт 10:00–19:00; сб 12:00–18:00; воскресенье - выходной</div>
                         </div>
-                        <div class="opacity-80 mb-3 lg:pr-5 lg:inline-block lg:w-full">
+                        <div class="opacity-80 mb-3 text-[14px] md:text-base lg:pr-5 lg:inline-block lg:w-full">
                             <div class="font-semibold">Почтовый адрес:</div>
                             <div>194355, Российская Федерация, г. Санкт-Петербург, ул. Композиторов, д. 12, литер А, пом. 54-Н:</div>
                         </div>
-                        <div class="opacity-80 mb-3 lg:pr-5 lg:inline-block lg:w-full">
+                        <div class="opacity-80 mb-3 text-[14px] md:text-base lg:pr-5 lg:inline-block lg:w-full">
                             <div class="font-semibold">Телефон/факс:</div>
                             <div>8 (950) 007-04-14</div>
                         </div>
-                        <div class="opacity-80 mb-3 lg:pr-5 lg:inline-block lg:w-full">
+                        <div class="opacity-80 mb-3 text-[14px] md:text-base lg:pr-5 lg:inline-block lg:w-full">
                             <div class="font-semibold">ИНН/КПП:</div>
                             <div>7802707654 / 780201001</div>
                         </div>
-                        <div class="opacity-80 mb-3 lg:pr-5 lg:inline-block lg:w-full">
+                        <div class="opacity-80 mb-3 text-[14px] md:text-base lg:pr-5 lg:inline-block lg:w-full">
                             <div class="font-semibold">ОГРН:</div>
                             <div>1207800064746</div>
                         </div>
-                        <div class="opacity-80 mb-3 lg:pr-5 lg:inline-block lg:w-full">
+                        <div class="opacity-80 mb-3 text-[14px] md:text-base lg:pr-5 lg:inline-block lg:w-full">
                             <div class="font-semibold">Расчётный счет:</div>
                             <div>40702810155000046212</div>
                         </div>
-                        <div class="opacity-80 mb-3 lg:pr-5 lg:inline-block lg:w-full">
+                        <div class="opacity-80 mb-3 text-[14px] md:text-base lg:pr-5 lg:inline-block lg:w-full">
                             <div class="font-semibold">Корреспондентский счет:</div>
                             <div>30101810500000000653</div>
                         </div>
-                        <div class="opacity-80 mb-3 lg:pr-5 lg:inline-block lg:w-full">
+                        <div class="opacity-80 mb-3 text-[14px] md:text-base lg:pr-5 lg:inline-block lg:w-full">
                             <div class="font-semibold">БИК банка:</div>
                             <div>044030653</div>
                         </div>
-                        <div class="opacity-80 mb-3 lg:pr-5 lg:inline-block lg:w-full">
+                        <div class="opacity-80 mb-3 text-[14px] md:text-base lg:pr-5 lg:inline-block lg:w-full">
                             <div class="font-semibold">Банк:</div>
                             <div>СЕВЕРО-ЗАПАДНЫЙ БАНК ПАО СБЕРБАНК г. Санкт-Петербург</div>
                         </div>
-                        <div class="opacity-80 mb-3 lg:pr-5 lg:inline-block lg:w-full">
+                        <div class="opacity-80 mb-3 text-[14px] md:text-base lg:pr-5 lg:inline-block lg:w-full">
                             <div class="font-semibold">Директор:</div>
                             <div>Михайловская Ольга Андреевна (Действует на основании Устава)</div>
                         </div>
-                        <div class="opacity-80 mb-3 lg:pr-5 lg:inline-block lg:w-full">
+                        <div class="opacity-80 mb-3 text-[14px] md:text-base lg:pr-5 lg:inline-block lg:w-full">
                             <div class="font-semibold">E-mail:</div>
                             <div>info@sdlgroup.ru</div>
                         </div>

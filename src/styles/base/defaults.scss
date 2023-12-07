@@ -14,6 +14,10 @@ body {
     @apply hidden;
 }
 
+[v-cloak] {
+    @apply hidden;
+}
+
 a:not(a[class]) {
     @apply
         text-brand

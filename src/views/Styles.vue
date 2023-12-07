@@ -7,6 +7,15 @@
             <h4>Заголовок H4</h4>
             <h5>Заголовок H5</h5>
             <h6>Заголовок H6</h6>
+            <br>
+            <p>
+                <button 
+                    type="button" 
+                    class="app-button app-button--dark"
+                    v-modal-call="{ref: 'testModal'}"
+                >Модальное окно</button>
+            </p>
+            <br>
             <p class="text-style-base">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente ea hic iste, ipsa quod delectus porro obcaecati odio odit ratione alias, nostrum voluptatum nisi aspernatur. Sit id nobis nesciunt neque.
             </p>
