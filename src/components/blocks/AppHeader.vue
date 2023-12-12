@@ -3,7 +3,11 @@
         <div class="app-header__top py-4 border-b border-neutral bg-white">
             <div class="centered flex items-center">
                 <div class="app-logo app-logo--header">
-                    <router-link :to="{name: 'login'}"><img :src="`${routerPath}img/logo-dark.svg`" alt=""></router-link>
+                    <router-link 
+                        :to="{name: 'main'}"
+                    >
+                        <img :src="`${routerPath}img/logo-dark.svg`" alt="">
+                    </router-link>
                 </div>
                 <div class="ml-auto flex items-center gap-4 pl-4 lg:gap-8">
                     <GeoPosition class="text-[12px] hidden md:flex lg:text-[16px]"></GeoPosition>
@@ -45,7 +49,7 @@
                 <div class="relative flex items-center justify-between py-2.5 min-h-[44px]">
                     <div></div>
                     <nav class="text-[14px] leading-[1.3] font-medium hidden md:block lg:text-base">
-                        <ul class="flex items-center justify-center gap-5 lg:gap-8">
+                        <ul class="select-none flex items-center justify-center gap-5 lg:gap-8">
                             <li><router-link :to="{name:'catalog'}" class="[&.is-active-link]:text-brand hover:text-brand">Каталог</router-link></li>
                             <li><router-link :to="{name:'about'}" class="[&.is-active-link]:text-brand hover:text-brand">О нас</router-link></li>
                             <li><router-link :to="{name:'articles'}" class="[&.is-active-link]:text-brand hover:text-brand">Новости</router-link></li>

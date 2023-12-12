@@ -8,6 +8,7 @@ export function initArticlesItemSlider(): Swiper {
         spaceBetween: 20,
         slidesPerView: 1,
         pagination: {
+            clickable: true,
             el: '.slider-pagination',
             renderBullet(index: number, className: string) {
                 return `
@@ -20,7 +21,7 @@ export function initArticlesItemSlider(): Swiper {
     return slider
 }
 
-export function initNotFoundPageSlider() {
+export function initNotFoundPageSlider(): Swiper {
     const slider = new Swiper('.js-not-found-page-slider', {
         slidesPerView: 'auto',
         speed: 600,
@@ -32,7 +33,7 @@ export function initNotFoundPageSlider() {
     return slider
 }
 
-export function initProductItemSlider() {
+export function initProductItemSlider(): Swiper {
     const slider = new Swiper('.js-product-item-slider', {
         modules: [Pagination, Navigation],
         speed: 600,
@@ -43,6 +44,31 @@ export function initProductItemSlider() {
             nextEl: '.slider-next',
         },
         pagination: {
+            clickable: true,
+            el: '.slider-pagination',
+            renderBullet(index: number, className: string) {
+                return `
+                    <div class="slider-pagination__item ${className}"></div>
+                `
+            }
+        },
+    });
+
+    return slider
+}
+
+export function initSlideshow(): Swiper {
+    const slider = new Swiper('.js-slide-show', {
+        modules: [Pagination, Navigation],
+        speed: 600,
+        spaceBetween: 0,
+        slidesPerView: 1,
+        navigation: {
+            prevEl: '.slider-prev',
+            nextEl: '.slider-next',
+        },
+        pagination: {
+            clickable: true,
             el: '.slider-pagination',
             renderBullet(index: number, className: string) {
                 return `

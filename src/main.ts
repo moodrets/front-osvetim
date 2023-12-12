@@ -7,7 +7,8 @@ import '@/styles/main.scss'
 import { 
     initArticlesItemSlider,
     initNotFoundPageSlider,
-    initProductItemSlider
+    initProductItemSlider,
+    initSlideshow
 } from '@/scripts/initSliders'
 
 // vue imports
@@ -65,5 +66,6 @@ document.addEventListener('DOMContentLoaded', () => {
     initArticlesItemSlider()
     initNotFoundPageSlider()
     initProductItemSlider()
+    initSlideshow()
 })
 */

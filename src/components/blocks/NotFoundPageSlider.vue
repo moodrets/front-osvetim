@@ -7,7 +7,11 @@
                         :to="{name: 'product-item', params: {id: 1}}"
                         class="absolute left-0 right-0 top-0 bottom-0 z-[5]"
                     ></router-link>
-                    <img class="transition-all duration-300 group-hover:drop-shadow-lg w-full" :src="slide.img" alt="">
+                    <img 
+                        class="transition-all duration-300 group-hover:drop-shadow-lg w-full" 
+                        :src="slide.img" 
+                        alt=""
+                    >
                 </div>
             </div>
         </div>

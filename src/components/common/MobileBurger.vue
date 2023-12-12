@@ -3,7 +3,7 @@
         <div class="svg-icon w-8 h-8" v-if="offcanvasVisible">
             <svg><use xlink:href="#close"></use></svg>
         </div>
-        <div class="svg-icon" v-else="offcanvasVisible">
+        <div class="svg-icon" v-else>
             <svg><use xlink:href="#burger"></use></svg>
         </div>
     </button>

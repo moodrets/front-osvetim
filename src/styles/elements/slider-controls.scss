@@ -18,10 +18,11 @@
             rounded-full
             border-2
             border-stone
+            cursor-pointer
         ;
 
         &[class*="active"] {
-            @apply bg-stone;
+            @apply bg-stone pointer-events-none;
         }
     }
 }

@@ -6,7 +6,7 @@
             :img="`${routerPath}banners/banner-footer.png`"
         >
             <div class="text-[14px] text-white mb-1 uppercase">Новинка 2024</div>
-            <div class="h1 text-white mb-5">Поможем подобрать освещение по фото и дизайн проекту</div>
+            <div class="h1 text-white mb-5">Коллекция «Название»</div>
             <div>
                 <a href="#" class="app-button app-button--light">Смотреть</a>
             </div>

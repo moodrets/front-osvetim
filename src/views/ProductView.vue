@@ -77,7 +77,7 @@
                     <a
                         v-scroll-to="{target: '#product-chars', offsetY: 140}"
                         href="#"
-                        class="underline text-[14px] font-semibold leading-[1.1] tracking-[-0.28px] flex items-end justify-between lg:text-[20px]"
+                        class="underline self-start text-[14px] font-semibold leading-[1.1] tracking-[-0.28px] flex items-end justify-between lg:text-[20px]"
                     >Все характеристики</a>
 
                     <div class="mt-auto pt-5 lg:pt-8">

@@ -31,6 +31,8 @@
                         <li><router-link :to="{name:'articles'}" class="[&.is-active-link]:underline hover:underline">Новости</router-link></li>
                         <li><router-link :to="{name:'delivery-and-payment'}" class="[&.is-active-link]:underline hover:underline">Доставка и оплата</router-link></li>
                         <li><router-link :to="{name:'contacts'}" class="[&.is-active-link]:underline hover:underline">Контакты</router-link></li>
+                        <li><router-link :to="{name:'login'}" class="[&.is-active-link]:underline hover:underline">Вход</router-link></li>
+                        <li><router-link :to="{name:'registration'}" class="[&.is-active-link]:underline hover:underline">Регистрация</router-link></li>
                     </ul>
                 </nav>
                 <div class="flex flex-col items-center md:w-1/3">
