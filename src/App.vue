@@ -29,6 +29,10 @@
 			Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis enim quo at fugiat ab quaerat quas odit, tenetur suscipit esse placeat quidem delectus doloribus dolorum. Obcaecati quia tenetur molestiae aspernatur.
 		</p>
 	</AppModal>
+	<AppModal ref="callbackModal">
+		<div class="h2">Напишите нам</div>
+		<CallbackForm></CallbackForm>
+	</AppModal>
 	<SvgSprite />
 </template>
 

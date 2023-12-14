@@ -10,5 +10,5 @@
 </template>
 
 <script setup lang="ts">
-import { offcanvasVisible, offcanvasToggle } from '@/reactive/Offcanvas';
+import { offcanvasToggle, offcanvasVisible } from '@/composables/useOffcanvas';
 </script>

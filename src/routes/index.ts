@@ -1,6 +1,6 @@
-import { RouteRecordRaw, createRouter, createWebHistory } from "vue-router";
-import { offcanvasClose } from "@/reactive/Offcanvas";
-import { routerPath } from "@/reactive/RouterPath";
+import { RouteRecordRaw, createRouter, createWebHistory } from 'vue-router'
+import { routerPath } from '@/reactive/RouterPath'
+import { offcanvasClose } from '@/composables/useOffcanvas'
 
 // views
 import DefaultLayout from '@/layouts/Default.vue'
@@ -140,7 +140,7 @@ const routes: RouteRecordRaw[] = [
     },
     // 404
     {
-        path: "/:pathMatch(.*)*",
+        path: '/:pathMatch(.*)*',
         component: DefaultLayout,
         children: [
             {

@@ -25,10 +25,10 @@ import { reactive, ref } from 'vue'
 
 const props = withDefaults(
     defineProps<{
-        width?: number
+        width?: number,
     }>(),
     {
-        width: 480
+        width: 480,
     }
 )
 
@@ -90,6 +90,7 @@ function clickHandler(event: Event) {
             absolute
             right-3
             top-3
+            z-10
         ;
 
         .svg-icon {

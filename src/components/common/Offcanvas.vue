@@ -12,7 +12,7 @@
 </template>
 
 <script setup lang="ts">
-import { offcanvasVisible, offcanvasToggle } from '@/reactive/Offcanvas';
+import { offcanvasToggle, offcanvasVisible } from '@/composables/useOffcanvas';
 
 function clickHandler(event: Event) {
     const target = event.target as HTMLElement

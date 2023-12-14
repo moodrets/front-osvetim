@@ -11,7 +11,10 @@
                 <div class="mt-3 text-[20px] lg:text-[28px] leading-[1.0]">
                     г. Москва, Волоколамское шоссе, д.103, ТЦ "Гвоздь", 3 этаж, 33.
                 </div>
-                <button class="mt-20 app-button app-button--secondary">написать нам</button>
+                <button
+                    v-modal-call="{ref: 'callbackModal'}"
+                    class="mt-20 app-button app-button--secondary"
+                >написать нам</button>
                 <div class="mt-10 flex justify-center items-center flex-wrap gap-1 lg:mt-20">
                     <a href="#" class="rounded-icon">
                         <div class="svg-icon">

@@ -8,12 +8,17 @@
             <h5>Заголовок H5</h5>
             <h6>Заголовок H6</h6>
             <br>
-            <p>
+            <p class="flex flex-wrap items-center gap-4">
                 <button 
                     type="button" 
                     class="app-button app-button--dark"
                     v-modal-call="{ref: 'testModal'}"
                 >Модальное окно</button>
+                <button 
+                    type="button" 
+                    class="app-button app-button--secondary"
+                    @click="showToast"
+                >Уведомления</button>
             </p>
             <br>
             <p class="text-style-base">
@@ -115,5 +120,12 @@
 </template>
 
 <script setup lang="ts">
+import { toast } from '@/composables/useToast';
 
+function showToast() {
+    toast.show('info', 'Обычное уведомление')
+    toast.show('success', 'Успешное уведомление')
+    toast.show('warning', 'Предупреждающее уведомление')
+    toast.show('error', 'Уведомление об ошибке')
+}
 </script>

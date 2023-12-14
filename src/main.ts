@@ -37,12 +37,14 @@ import PasswordRecoveryForm from '@/components/forms/PasswordRecoveryForm.vue'
 import OrderForm from '@/components/forms/OrderForm.vue'
 import PersonalDataForm from '@/components/forms/PersonalDataForm.vue'
 import PersonalPasswordForm from '@/components/forms/PersonalPasswordForm.vue'
+import CallbackForm from '@/components/forms/CallbackForm.vue'
 
 createApp(App)
     .directive('scroll-to', ScrollToDirective)
     .directive('modal-call', ModalDirective)
     .component('CountButtons', CountButtons)
     .component('LoginForm', LoginForm)
+    .component('CallbackForm', CallbackForm)
     .component('RegistrationForm', RegistrationForm)
     .component('PasswordRecoveryForm', PasswordRecoveryForm)
     .component('OrderForm', OrderForm)

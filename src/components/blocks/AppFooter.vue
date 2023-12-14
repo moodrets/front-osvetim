@@ -36,7 +36,10 @@
                     </ul>
                 </nav>
                 <div class="flex flex-col items-center md:w-1/3">
-                    <button class="app-button app-button--light">Написать нам</button>
+                    <button
+                        v-modal-call="{ref: 'callbackModal'}"
+                        class="app-button app-button--light"
+                    >Написать нам</button>
                     <div class="flex justify-center items-center flex-wrap mt-4 gap-1">
                         <a href="#" class="rounded-icon rounded-icon--light">
                             <div class="svg-icon">
