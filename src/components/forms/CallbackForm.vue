@@ -28,6 +28,8 @@ const app = getCurrentInstance()
 async function onSubmit() {
     const parentModal = useModal(app, 'callbackModal')
     parentModal?.onClose()
-    toast.show('success', 'Мы свяжемся с вами в ближайшее время')
+    toast.show('success', 'Мы свяжемся с вами в ближайшее время', {
+        position: 'bottom-center'
+    })
 }
 </script>

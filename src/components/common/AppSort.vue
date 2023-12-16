@@ -8,7 +8,11 @@
                 </div>
             </div>
         </div>
-        <div class="app-sort__dropdown" v-if="state.sortList.length">
+        <div 
+            v-if="state.sortList.length"
+            class="app-sort__dropdown"
+            :class="dropdownClass"
+        >
             <ul>
                 <li
                     v-for="(item, itemIndex) in state.sortList"
@@ -33,10 +37,12 @@ interface SortItem {
 
 const props = withDefaults(
     defineProps<{
-        sortItems?: SortItem[]
+        sortItems?: SortItem[],
+        dropdownClass?: string
     }>(),
     {
-        sortItems: () => []
+        sortItems: () => [],
+        dropdownClass: 'left-0 origin-top-left md:left-auto md:right-0 md:origin-top-right'
     }
 )
 
@@ -44,7 +50,7 @@ const emits = defineEmits(['change'])
 
 const state = reactive<{
     isOpen: boolean,
-    sortList: SortItem[]
+    sortList: SortItem[],
 }>({
     isOpen: false,
     sortList: []
@@ -128,7 +134,6 @@ onUnmounted(() => {
     &__dropdown {
         @apply 
             absolute
-            left-0
             top-[140%]
             transition-all
             duration-200
@@ -141,12 +146,8 @@ onUnmounted(() => {
             scale-0
             opacity-0
             pointer-events-none
-            origin-top-left
             border-neutral
             bg-white
-            md:left-auto
-            md:right-0
-            md:origin-top-right
         ;
 
         ul {

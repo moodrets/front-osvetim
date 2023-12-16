@@ -2,7 +2,7 @@
     <div
         v-cloak 
         class="app-offcanvas" 
-        :class="{'is-open': offcanvasVisible}" 
+        :class="{'is-open': offcanvasVisibleState[props.name]}"
         @click="clickHandler"
     >
         <div class="app-offcanvas__body">
@@ -12,12 +12,18 @@
 </template>
 
 <script setup lang="ts">
-import { offcanvasToggle, offcanvasVisible } from '@/composables/useOffcanvas';
+import { offcanvasToggle, offcanvasVisibleState } from '@/composables/useOffcanvas';
+
+const props = defineProps<{
+    name: string
+}>()
+
+offcanvasVisibleState.value[props.name] = false
 
 function clickHandler(event: Event) {
     const target = event.target as HTMLElement
     if (target.classList.contains('app-offcanvas')) {
-        offcanvasToggle()
+        offcanvasToggle(props.name)
     }
 }
 </script>

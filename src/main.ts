@@ -27,7 +27,8 @@ import Accordion from '@/components/common/Accordion.vue'
 import AppTabs from '@/components/common/AppTabs.vue'
 import Pagination from '@/components/blocks/Pagination.vue'
 import AppSort from '@/components/common/AppSort.vue'
-import MobileBurger from '@/components/common/MobileBurger.vue'
+import MobileMenuBurger from '@/components/common/MobileMenuBurger.vue'
+import MobileFiltersBurger from '@/components/common/MobileFiltersBurger.vue'
 import CountButtons from '@/components/common/CountButtons.vue'
 import Offcanvas from '@/components/common/Offcanvas.vue'
 import AppModal from '@/components/common/AppModal.vue'
@@ -56,7 +57,8 @@ createApp(App)
     .component('AppTabs', AppTabs)
     .component('Pagination', Pagination)
     .component('AppSort', AppSort)
-    .component('MobileBurger', MobileBurger)
+    .component('MobileFiltersBurger', MobileFiltersBurger)
+    .component('MobileMenuBurger', MobileMenuBurger)
     .component('Offcanvas', Offcanvas)
     .component('AppModal', AppModal)
     .use(router)

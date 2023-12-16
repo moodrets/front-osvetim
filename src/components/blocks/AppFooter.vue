@@ -2,7 +2,9 @@
     <footer class="app-footer bg-dark pt-5 py-3 text-white flex-none">
         <div class="centered">
             <div class="app-logo app-logo--footer select-none">
-                <a href="/"><img :src="`${routerPath}img/logo-light.svg`" alt="" /></a>
+                <router-link :to="{name: 'main'}">
+                    <img :src="`${routerPath}img/logo-light.svg`" alt="" />
+                </router-link>
             </div>
             <div class="text-center mt-4 select-none">
                 <img class="max-w-[230px] lg:max-w-full inline-block" :src="`${routerPath}img/slogan-light.svg`" alt="" />

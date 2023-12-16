@@ -5,7 +5,7 @@
                 v-for="slide in 3" 
                 :key="slide"
                 :style="{'background-image': `url(${routerPath}img/slide-show-${slide}.png)`}"
-                class="swiper-slide bg-cover bg-center bg-no-repeat relative h-[680px] md:h-[800px]" 
+                class="swiper-slide bg-cover bg-center bg-no-repeat relative h-[680px] md:h-[800px]"
             >
                 <div class="floating-block text-white text-left min-w-[270px] absolute left-10 top-10 md:left-16 md:top-16">
                     <router-link :to="{name: 'product-item', params: {id: 1}}"></router-link>

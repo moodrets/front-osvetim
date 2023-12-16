@@ -3,10 +3,13 @@
     <ValuesBlock></ValuesBlock>
     <Banner
         :img="`${routerPath}banners/banner-2.png`"
+        class="flex"
     >
-        <div class="h1 text-white mb-5">Баннер</div>
-        <div>
-            <a href="#" class="app-button app-button--light">Смотреть</a>
+        <div class="m-auto text-center w-[460px] max-w-full px-5">
+            <div class="h1 text-white mb-5">Баннер</div>
+            <div>
+                <a href="#" class="app-button app-button--light">Смотреть</a>
+            </div>
         </div>
     </Banner>
     <MainCategories></MainCategories>
@@ -38,7 +41,7 @@
             </div>
         </div>
     </div>
-    <SlideShow></SlideShow>
+    <MainSlideShow></MainSlideShow>
     <MainAboutBlock></MainAboutBlock>
     <InstagramBlock></InstagramBlock>
 </template>
@@ -51,7 +54,7 @@ import ValuesBlock from '@/components/blocks/ValuesBlock.vue'
 import Banner from '@/components/blocks/Banner.vue'
 import MainCategories from '@/components/blocks/MainCategories.vue'
 import ProductList from '@/components/blocks/ProductList.vue'
-import SlideShow from '@/components/blocks/SlideShow.vue'
+import MainSlideShow from '@/components/blocks/MainSlideShow.vue'
 import InstagramBlock from '@/components/blocks/InstagramBlock.vue'
 import MainAboutBlock from '@/components/blocks/MainAboutBlock.vue'
 </script>

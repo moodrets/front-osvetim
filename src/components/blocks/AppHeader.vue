@@ -39,7 +39,7 @@
                             </div>
                             <div class="badge">4</div>
                         </router-link>
-                        <MobileBurger class="md:hidden"></MobileBurger>
+                        <MobileMenuBurger class="md:hidden"></MobileMenuBurger>
                     </div>
                 </div>
             </div>

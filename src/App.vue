@@ -1,14 +1,14 @@
 <template>
 	<router-view />
-	<Offcanvas class="lg:hidden">
+	<Offcanvas class="lg:hidden" name="mobileMenu">
 		<nav class="mb-8">
 			<ul class="flex flex-col gap-2">
-				<li><router-link :to="{name:'catalog'}" class="font-semibold hover:text-brand">Каталог</router-link></li>
-				<li><router-link :to="{name:'about'}" class="font-semibold hover:text-brand">О нас</router-link></li>
-				<li><router-link :to="{name:'articles'}" class="font-semibold hover:text-brand">Новости</router-link></li>
-				<li><router-link :to="{name:'delivery-and-payment'}" class="font-semibold hover:text-brand">Доставка и оплата</router-link></li>
-				<li><router-link :to="{name:'contacts'}" class="font-semibold hover:text-brand">Контакты</router-link></li>
-			</ul>			
+				<li><router-link :to="{name:'catalog'}" class="[&.is-active-link]:text-brand font-semibold hover:text-brand">Каталог</router-link></li>
+				<li><router-link :to="{name:'about'}" class="[&.is-active-link]:text-brand font-semibold hover:text-brand">О нас</router-link></li>
+				<li><router-link :to="{name:'articles'}" class="[&.is-active-link]:text-brand font-semibold hover:text-brand">Новости</router-link></li>
+				<li><router-link :to="{name:'delivery-and-payment'}" class="[&.is-active-link]:text-brand font-semibold hover:text-brand">Доставка и оплата</router-link></li>
+				<li><router-link :to="{name:'contacts'}" class="[&.is-active-link]:text-brand font-semibold hover:text-brand">Контакты</router-link></li>
+			</ul>	
 		</nav>
 		<GeoPosition class="mb-8"></GeoPosition>
 		<div>

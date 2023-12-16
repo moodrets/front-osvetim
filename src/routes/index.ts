@@ -5,6 +5,7 @@ import { offcanvasClose } from '@/composables/useOffcanvas'
 // views
 import DefaultLayout from '@/layouts/Default.vue'
 import Main from '@/views/Main.vue'
+import About from '@/views/About.vue'
 import NotFound from '@/views/404.vue'
 import Styles from '@/views/Styles.vue'
 import Contacts from '@/views/Contacts.vue'
@@ -37,19 +38,24 @@ const routes: RouteRecordRaw[] = [
                 component: Main,
             },
             {
+                path: 'about',
+                name: 'about',
+                component: About,
+            },
+            {
                 path: 'login',
                 name: 'login',
                 component: Login,
             },
             {
-                path: 'password-recovery',
-                name: 'password-recovery',
-                component: PasswordRecovery,
-            },
-            {
                 path: 'registration',
                 name: 'registration',
                 component: Registration,
+            },
+            {
+                path: 'password-recovery',
+                name: 'password-recovery',
+                component: PasswordRecovery,
             },
             {
                 path: 'catalog',
@@ -60,11 +66,6 @@ const routes: RouteRecordRaw[] = [
                 path: 'catalog/:id',
                 name: 'product-item',
                 component: ProductView,
-            },
-            {
-                path: 'about',
-                name: 'about',
-                component: Main,
             },
             {
                 path: 'articles',

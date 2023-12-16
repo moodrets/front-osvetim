@@ -49,16 +49,21 @@
 .rd-toast-canvas {
     --rd-toast-padding: 8px 14px;
     --rd-toast-radius: 8px;
-    --rd-toast-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+    --rd-toast-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
     --rd-toast-info: rgba(255, 255, 255);
-    --rd-toast-warning: #A47B5B;
-    --rd-toast-error: rgb(225 29 72);
-    --rd-toast-success: rgb(22 163 74);
+    --rd-toast-warning: rgb(251 191 36);
+    --rd-toast-error: rgb(251 113 133);
+    --rd-toast-success: rgb(52 211 153);
 
     --rd-toast-info-text: #000;
     --rd-toast-error-text: #fff;
     --rd-toast-success-text: #fff;
     --rd-toast-warning-text: #fff;
+
+    --rd-toast-info-border: rgba(0,0,0,.1);
+    --rd-toast-error-border: rgba(0,0,0,.1);
+    --rd-toast-success-border: rgba(0,0,0,.1);
+    --rd-toast-warning-border: rgba(0,0,0,.1);
 
     display: grid;
     grid-template-columns: 100%;
@@ -138,21 +143,25 @@
 .rd-toast-item.type-info {
     background-color: var(--rd-toast-info);
     color: var(--rd-toast-info-text);
+    border: 1px solid var(--rd-toast-info-border);
 }
 
 .rd-toast-item.type-warning {
     background-color: var(--rd-toast-warning);
     color: var(--rd-toast-warning-text);
+    border: 1px solid var(--rd-toast-warning-border);
 }
 
 .rd-toast-item.type-error {
     background-color: var(--rd-toast-error);
     color: var(--rd-toast-error-text);
+    border: 1px solid var(--rd-toast-error-border);
 }
 
 .rd-toast-item.type-success {
     background-color: var(--rd-toast-success);
     color: var(--rd-toast-success-text);
+    border: 1px solid var(--rd-toast-success-border);
 }
 
 .rd-toast-item[class*='position-bottom'].show {
