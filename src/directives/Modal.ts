@@ -1,8 +1,9 @@
+import { modalToggle } from "@/composables/useModal";
+
 function clickHandler(binding: Record<string, any>, event: Event) {
     event.preventDefault()
-    if (binding.value.ref) {
-        let modalRef = binding.instance.$root.$refs[binding.value.ref]
-        modalRef?.onOpen()
+    if (binding.value.name) {
+        modalToggle(binding.value.name)
     }
 }
 

@@ -22,7 +22,8 @@ import ModalDirective from '@/directives/Modal'
 // vue global components
 import App from '@/App.vue'
 import Details from '@/components/common/Details.vue'
-import GeoPosition from '@/components/common/GeoPosition.vue'
+import GeoLocation from '@/components/common/GeoLocation.vue'
+import GeoLocationList from '@/components/common/GeoLocationList.vue'
 import AppSearch from '@/components/common/AppSearch.vue'
 import Accordion from '@/components/common/Accordion.vue'
 import AppTabs from '@/components/common/AppTabs.vue'
@@ -54,7 +55,8 @@ createApp(App)
     .component('PersonalDataForm', PersonalDataForm)
     .component('PersonalPasswordForm', PersonalPasswordForm)
     .component('AppSearch', AppSearch)
-    .component('GeoPosition', GeoPosition)
+    .component('GeoLocation', GeoLocation)
+    .component('GeoLocationList', GeoLocationList)
     .component('Accordion', Accordion)
     .component('AppTabs', AppTabs)
     .component('Pagination', Pagination)

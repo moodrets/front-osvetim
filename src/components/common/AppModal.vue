@@ -4,7 +4,7 @@
         tabindex="0"
         class="app-modal"
         ref="appModalRef"
-        :class="{'is-open': state.visible}"
+        :class="{'is-open': modalVisibleState[props.name]}"
         :style="{'--app-modal-width': `${props.width}px`}"
         @click="clickHandler"
         @keydown.esc="onClose"
@@ -21,45 +21,42 @@
 </template>
 
 <script setup lang="ts">
-import { reactive, ref } from 'vue'
+import { modalVisibleState, modalToggle } from '@/composables/useModal';
+import { onUpdated, ref } from 'vue'
 
 const props = withDefaults(
     defineProps<{
         width?: number,
+        name: string,
     }>(),
     {
+        name: 'defaultModal',
         width: 480,
     }
 )
 
+modalVisibleState.value[props.name] = false
+
 const appModalRef = ref<HTMLElement>()
 
-const state = reactive({
-    visible: false
-})
-
-defineExpose({
-    onClose,
-    onOpen
-})
-
-function onOpen() {
-    document.body.classList.add('overflow-hidden')
-    state.visible = true
-    appModalRef?.value?.focus()
-}
-
 function onClose() {
-    document.body.classList.remove('overflow-hidden')
-    state.visible = false
-    appModalRef?.value?.blur()
+    modalToggle(props.name)
 }
 
 function clickHandler(event: Event) {
     if ((event.target as HTMLElement).classList.contains('app-modal')) {
-        onClose()
+        modalToggle(props.name)
     }
 }
+
+onUpdated(() => {
+    if (modalVisibleState.value[props.name] === true) {
+        appModalRef?.value?.focus()
+    }
+    if (modalVisibleState.value[props.name] === false) {
+        appModalRef?.value?.blur()
+    }
+})
 </script>
 
 <style lang="scss">

@@ -39,7 +39,7 @@
                 </nav>
                 <div class="flex flex-col items-center md:w-1/3">
                     <button
-                        v-modal-call="{ref: 'callbackModal'}"
+                        v-modal-call="{name: 'callbackModal'}"
                         class="app-button app-button--light"
                     >Написать нам</button>
                     <div class="flex justify-center items-center flex-wrap mt-4 gap-1">
@@ -68,7 +68,7 @@
                         <div>пн-пт: 09.00-21.00</div>
                         <div>сб-вс: 10.00-19.00</div>
                     </div>
-                    <GeoPosition icon-class="text-white"></GeoPosition>
+                    <GeoLocation icon-class="text-white" />
                 </div>
             </div>
             <div class="text-[10px] leading-[1.4] opacity-80 pt-3 mt-5 border-t border-white border-opacity-40 flex flex-col items-center gap-2 md:flex-row">

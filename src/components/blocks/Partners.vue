@@ -2,7 +2,7 @@
     <section class="partners-block pt-5 pb-20 md:pt-8">
         <div class="centered">
             <div class="mb-5 h-[1px] bg-neutral-alpha"></div>
-            <div class="h1 mb-[60px] md:mb-[180px] xl:mb-[320px]">Партнеры</div>
+            <div class="h1 mb-[60px] md:mb-[180px] xl:mb-[220px]">Партнеры</div>
 
             <div class="grid grid-cols-4 gap-2.5 md:gap-5 xl:grid-cols-6">
                 <a 

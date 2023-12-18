@@ -13,7 +13,7 @@
 				<li><router-link :to="{name:'contacts'}" class="[&.is-active-link]:text-brand font-semibold hover:text-brand">Контакты</router-link></li>
 			</ul>	
 		</nav>
-		<GeoPosition class="mb-8"></GeoPosition>
+		<GeoLocation class="mb-8" />
 		<div>
 			<a class="text-[20px] font-semibold leading-[1.1] tracking-[-0.8px]" href="tel:88126678226">
 				8 (812) 667-82-26
@@ -26,19 +26,11 @@
 			</div>
 		</div>
 	</Offcanvas>
-	<AppModal ref="testModal">
-		<div class="h2">Заголовок</div>
-		<p>
-			Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis enim quo at fugiat ab quaerat quas odit, tenetur suscipit esse placeat quidem delectus doloribus dolorum. Obcaecati quia tenetur molestiae aspernatur.
-		</p>
-	</AppModal>
-	<AppModal ref="callbackModal">
-		<div class="h2">Напишите нам</div>
-		<CallbackForm></CallbackForm>
-	</AppModal>
+	<Modals />
 	<SvgSprite />
 </template>
 
 <script setup lang="ts">
 import SvgSprite from '@/components/blocks/SvgSprite.vue'
+import Modals from '@/components/blocks/Modals.vue'
 </script>

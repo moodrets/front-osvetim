@@ -12,7 +12,7 @@
                 <button 
                     type="button" 
                     class="app-button app-button--dark"
-                    v-modal-call="{ref: 'testModal'}"
+                    v-modal-call="{name: 'testModal'}"
                 >Модальное окно</button>
                 <button 
                     type="button" 

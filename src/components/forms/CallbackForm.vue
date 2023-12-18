@@ -19,15 +19,11 @@
 </template>
 
 <script setup lang="ts">
-import { useModal } from '@/composables/useModal'
+import { modalToggle } from '@/composables/useModal';
 import { toast } from '@/composables/useToast'
-import { getCurrentInstance } from 'vue'
-
-const app = getCurrentInstance()
 
 async function onSubmit() {
-    const parentModal = useModal(app, 'callbackModal')
-    parentModal?.onClose()
+    modalToggle('callbackModal')
     toast.show('success', 'Мы свяжемся с вами в ближайшее время', {
         position: 'bottom-center'
     })

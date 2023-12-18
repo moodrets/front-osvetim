@@ -12,7 +12,7 @@
                     г. Москва, Волоколамское шоссе, д.103, ТЦ "Гвоздь", 3 этаж, 33.
                 </div>
                 <button
-                    v-modal-call="{ref: 'callbackModal'}"
+                    v-modal-call="{name: 'callbackModal'}"
                     class="mt-20 app-button app-button--secondary"
                 >написать нам</button>
                 <div class="mt-10 flex justify-center items-center flex-wrap gap-1 lg:mt-20">
