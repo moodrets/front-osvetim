@@ -21,6 +21,7 @@ import ModalDirective from '@/directives/Modal'
 
 // vue global components
 import App from '@/App.vue'
+import Details from '@/components/common/Details.vue'
 import GeoPosition from '@/components/common/GeoPosition.vue'
 import AppSearch from '@/components/common/AppSearch.vue'
 import Accordion from '@/components/common/Accordion.vue'
@@ -43,6 +44,7 @@ import CallbackForm from '@/components/forms/CallbackForm.vue'
 createApp(App)
     .directive('scroll-to', ScrollToDirective)
     .directive('modal-call', ModalDirective)
+    .component('Details', Details)
     .component('CountButtons', CountButtons)
     .component('LoginForm', LoginForm)
     .component('CallbackForm', CallbackForm)

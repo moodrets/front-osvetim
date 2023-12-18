@@ -13,7 +13,7 @@
                 </div>
             </div>
         </div>
-        <div class="app-acc__body" >
+        <div class="app-acc__body">
             <div style="min-height: 0;">
                 <slot name="body"></slot>
             </div>

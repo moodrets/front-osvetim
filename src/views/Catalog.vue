@@ -6,8 +6,8 @@
                 <div class="text-[16px] text-dark text-opacity-50 font-semibold md:text-[20px]">18 позиций</div>
             </div>
             <div class="xl:flex xl:gap-5">
-                <aside class="xl:flex-none xl:w-[310px]">
-
+                <aside class="hidden xl:block xl:flex-none xl:w-[310px]">
+                    <CatalogAside />
                 </aside>
                 <div class="xl:flex-1 xl:min-w-0">
                     <div class="flex mb-5 justify-between xl:justify-end">
@@ -25,19 +25,23 @@
                     </div>
                     <ProductList
                         :list="productListCatalog"
-                        :columns="3" 
+                        :columns="3"
                     />
                     <Pagination class="mt-10 lg:mt-14" />
                 </div>
             </div>
         </div>
     </main>
-    <Offcanvas class="lg:hidden" name="mobileFilters">
-		
+    <Offcanvas 
+        name="mobileCatalogAside"
+        class="xl:hidden" 
+    >
+        <CatalogAside />
 	</Offcanvas>
 </template>
 
 <script setup lang="ts">
-import ProductList from '@/components/blocks/ProductList.vue'
 import { productListCatalog } from '@/reactive/ProductsLists';
+import ProductList from '@/components/blocks/ProductList.vue'
+import CatalogAside from '@/components/blocks/CatalogAside.vue'
 </script>

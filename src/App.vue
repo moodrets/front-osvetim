@@ -1,6 +1,9 @@
 <template>
 	<router-view />
-	<Offcanvas class="lg:hidden" name="mobileMenu">
+	<Offcanvas 
+		name="mobileMenu"
+		class="lg:hidden"
+	>
 		<nav class="mb-8">
 			<ul class="flex flex-col gap-2">
 				<li><router-link :to="{name:'catalog'}" class="[&.is-active-link]:text-brand font-semibold hover:text-brand">Каталог</router-link></li>
