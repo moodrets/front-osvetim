@@ -12,7 +12,7 @@
             placeholder="Введите поисковый запрос"
         >
     </form>
-    <div 
+    <div
         v-if="state.isOpen === false" 
         class="svg-icon svg-icon--stroke svg-icon--nofill text-brand cursor-pointer" 
         @click="onToggleSearch"

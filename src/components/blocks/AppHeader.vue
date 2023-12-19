@@ -47,7 +47,7 @@
         <div class="app-header__menu bg-white">
             <div class="centered">
                 <div class="relative flex items-center justify-between py-2.5 min-h-[44px]">
-                    <div></div>
+                    <OffcanvasClose />
                     <nav class="text-[14px] leading-[1.3] font-medium hidden md:block lg:text-base">
                         <ul class="select-none flex items-center justify-center gap-5 lg:gap-8">
                             <li><router-link :to="{name:'catalog'}" class="[&.is-active-link]:text-brand hover:text-brand">Каталог</router-link></li>
@@ -58,7 +58,7 @@
                             <li><router-link :to="{name:'styles'}" class="[&.is-active-link]:text-brand hover:text-brand">Стили</router-link></li>
                         </ul>
                     </nav>
-                    <AppSearch></AppSearch>
+                    <AppSearch />
                 </div>
             </div>
         </div>

@@ -1,7 +1,7 @@
 <template>
     <div
-        v-cloak 
-        class="app-offcanvas" 
+        v-cloak
+        class="app-offcanvas"
         :class="{'is-open': offcanvasVisibleState[props.name]}"
         @click="clickHandler"
     >
@@ -34,30 +34,34 @@ function clickHandler(event: Event) {
         fixed
         left-0
         right-0
-        top-0
+        top-[120px]
         bottom-0
         z-[100]
-        bg-dark
-        bg-opacity-50
-        backdrop-blur-[3px]
         transition-all
         duration-300
         pointer-events-none
         opacity-0
+        lg:top-[134px]
     ;
 
     &__body {
         @apply
             transition-all
             duration-300
-            translate-x-[-120%]
-            bg-white
-            w-[280px]
+            translate-y-[40px]
+            bg-neutral-100
+            bg-center
+            bg-no-repeat
+            w-full
             h-full
             overflow-y-auto
             p-5
+            pb-10
             shadow-xl
+            flex
+            flex-col
         ;
+        background-image: url('/img/offcanvas-bg.png');
     }
 
     &.is-open {
@@ -68,7 +72,7 @@ function clickHandler(event: Event) {
 
         .app-offcanvas__body {
             @apply 
-                translate-x-0
+                translate-y-0
             ;
         }
     }

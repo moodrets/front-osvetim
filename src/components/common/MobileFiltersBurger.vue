@@ -1,5 +1,5 @@
 <template>
-    <div class="flex items-center" @click="offcanvasToggle('mobileCatalogAside')">
+    <div class="flex items-center" @click="offcanvasToggle('mobileCatalogFilters')">
         <div class="svg-icon text-brand mr-2">
             <svg><use xlink:href="#filters"></use></svg>
         </div>

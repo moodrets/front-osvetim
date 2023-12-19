@@ -8,6 +8,7 @@
             <div class="xl:flex xl:gap-5">
                 <aside class="hidden xl:block xl:flex-none xl:w-[310px]">
                     <CatalogAside />
+                    <CatalogFilters />
                 </aside>
                 <div class="xl:flex-1 xl:min-w-0">
                     <div class="flex mb-5 justify-between xl:justify-end">
@@ -33,15 +34,16 @@
         </div>
     </main>
     <Offcanvas 
-        name="mobileCatalogAside"
+        name="mobileCatalogFilters"
         class="xl:hidden" 
     >
-        <CatalogAside />
+        <CatalogFilters />
 	</Offcanvas>
 </template>
 
 <script setup lang="ts">
 import { productListCatalog } from '@/reactive/ProductsLists';
 import ProductList from '@/components/blocks/ProductList.vue'
+import CatalogFilters from '@/components/blocks/CatalogFilters.vue'
 import CatalogAside from '@/components/blocks/CatalogAside.vue'
 </script>

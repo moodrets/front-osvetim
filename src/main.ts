@@ -32,7 +32,9 @@ import AppSort from '@/components/common/AppSort.vue'
 import MobileMenuBurger from '@/components/common/MobileMenuBurger.vue'
 import MobileFiltersBurger from '@/components/common/MobileFiltersBurger.vue'
 import CountButtons from '@/components/common/CountButtons.vue'
+import OrderDetails from '@/components/common/OrderDetails.vue'
 import Offcanvas from '@/components/common/Offcanvas.vue'
+import OffcanvasClose from '@/components/common/OffcanvasClose.vue'
 import AppModal from '@/components/common/AppModal.vue'
 import LoginForm from '@/components/forms/LoginForm.vue'
 import RegistrationForm from '@/components/forms/RegistrationForm.vue'
@@ -51,9 +53,10 @@ createApp(App)
     .component('CallbackForm', CallbackForm)
     .component('RegistrationForm', RegistrationForm)
     .component('PasswordRecoveryForm', PasswordRecoveryForm)
-    .component('OrderForm', OrderForm)
     .component('PersonalDataForm', PersonalDataForm)
     .component('PersonalPasswordForm', PersonalPasswordForm)
+    .component('OrderForm', OrderForm)
+    .component('OrderDetails', OrderDetails)
     .component('AppSearch', AppSearch)
     .component('GeoLocation', GeoLocation)
     .component('GeoLocationList', GeoLocationList)
@@ -64,6 +67,7 @@ createApp(App)
     .component('MobileFiltersBurger', MobileFiltersBurger)
     .component('MobileMenuBurger', MobileMenuBurger)
     .component('Offcanvas', Offcanvas)
+    .component('OffcanvasClose', OffcanvasClose)
     .component('AppModal', AppModal)
     .use(router)
 .mount('#app')

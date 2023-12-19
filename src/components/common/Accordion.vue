@@ -53,7 +53,6 @@ onBeforeMount(() => {
     ;
 
     &__top {
-        -webkit-tap-highlight-color: transparent;
         @apply
             select-none
             cursor-pointer

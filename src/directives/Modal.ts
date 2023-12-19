@@ -1,9 +1,13 @@
 import { modalToggle } from "@/composables/useModal";
+import { orderID } from "@/composables/useOrderDetails";
 
 function clickHandler(binding: Record<string, any>, event: Event) {
     event.preventDefault()
     if (binding.value.name) {
         modalToggle(binding.value.name)
+    }
+    if (binding.value.orderID) {
+        orderID.value = +binding.value.orderID
     }
 }
 

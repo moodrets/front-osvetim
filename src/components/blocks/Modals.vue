@@ -13,4 +13,10 @@
 		<div class="h2">Выберите город</div>
 		<GeoLocationList />
 	</AppModal>
+	<AppModal 
+		name="orderDetailsModal" 
+		:width="1080"
+	>
+		<OrderDetails />
+	</AppModal>
 </template>

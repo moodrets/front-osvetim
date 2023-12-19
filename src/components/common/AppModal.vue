@@ -11,8 +11,10 @@
     >
         <div class="app-modal__body">
             <div class="app-modal__close" @click="onClose">
-                <div class="svg-icon w-8 h-8">
-                    <svg><use xlink:href="#close"></use></svg>
+                <div class="rounded-icon w-8 h-8 md:w-11 md:h-11">
+                    <div class="svg-icon md:w-8 md:h-8">
+                        <svg><use xlink:href="#close"></use></svg>
+                    </div>
                 </div>
             </div>
             <slot></slot>
@@ -21,7 +23,7 @@
 </template>
 
 <script setup lang="ts">
-import { modalVisibleState, modalToggle } from '@/composables/useModal';
+import { modalVisibleState, modalClose } from '@/composables/useModal';
 import { onUpdated, ref } from 'vue'
 
 const props = withDefaults(
@@ -40,12 +42,14 @@ modalVisibleState.value[props.name] = false
 const appModalRef = ref<HTMLElement>()
 
 function onClose() {
-    modalToggle(props.name)
+    modalClose(props.name)
 }
 
 function clickHandler(event: Event) {
-    if ((event.target as HTMLElement).classList.contains('app-modal')) {
-        modalToggle(props.name)
+    const target = event.target as HTMLElement
+    
+    if (target.classList.contains('app-modal') || !target.closest('.app-modal')) {
+        modalClose(props.name)
     }
 }
 
@@ -85,9 +89,10 @@ onUpdated(() => {
         @apply 
             cursor-pointer
             absolute
-            right-3
-            top-3
+            right-4
+            top-4
             z-10
+            bg-white
         ;
 
         .svg-icon {

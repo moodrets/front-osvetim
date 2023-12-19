@@ -1,5 +1,5 @@
 <template>
-    <div class="flex items-center font-medium cursor-pointer" @click="modalToggle('geoLocationModal')">
+    <div class="flex items-center font-medium cursor-pointer" @click.prevent="clickHandler">
         <div class="svg-icon mr-[2px]" :class="iconClass">
             <svg><use xlink:href="#geo"></use></svg>
         </div>
@@ -11,12 +11,16 @@
 import { currentLocation } from '@/composables/useGeoLocation';
 import { modalToggle } from '@/composables/useModal'
 
-withDefaults(
+const props = withDefaults(
     defineProps<{
         iconClass?: string
     }>(),
     {
-        iconClass: 'text-brand'
+        iconClass: 'text-brand',
     }
 )
+
+function clickHandler() {
+    modalToggle('geoLocationModal')
+}
 </script>

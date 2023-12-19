@@ -7,10 +7,21 @@ export interface IGeoLocation {
 export const locationsList = ref<IGeoLocation[]>([
     {city: 'Санкт-Петербург'},
     {city: 'Москва'},
+    {city: 'Абакан'},
+    {city: 'Архангельск'},
+    {city: 'Астрахань'},
+    {city: 'Барнаул'},
+    {city: 'Белгород'},
+    {city: 'Благовещенск'},
+    {city: 'Великий Новгород'},
+    {city: 'Владивосток'},
+    {city: 'Владимир'},
     {city: 'Воронеж'},
-    {city: 'Екатеринбург'},
+    {city: 'Иваново'},
+    {city: 'Ижевск'},
+    {city: 'Иркутск'},
+    {city: 'Йошкар-Ола'},
+    {city: 'Казань'},
 ])
 
-export const currentLocation = ref<IGeoLocation>({
-    city: 'Санкт-Петербург'
-})
+export const currentLocation = ref<IGeoLocation>(locationsList.value[0])
