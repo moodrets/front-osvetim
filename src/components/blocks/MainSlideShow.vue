@@ -31,13 +31,17 @@ import { initSlideshow } from '@/scripts/initSliders'
 import { onMounted, onUnmounted } from 'vue'
 import { routerPath } from '@/reactive/RouterPath';
 
-let slider: Swiper | null = null
+let slider: Swiper | Swiper[] | null = null
 
 onMounted(() => {
   slider = initSlideshow()
 })
 
 onUnmounted(() => {
-  slider?.destroy()
+    if (Array.isArray(slider)) {
+        slider.forEach(swiper => swiper.destroy())
+    } else {
+        slider?.destroy()
+    }
 })
 </script>
