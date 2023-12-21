@@ -1,7 +1,11 @@
 <template>
-    <div class="swiper js-not-found-page-slider">
+    <div class="swiper js-tape-slider">
         <div class="swiper-wrapper">
-            <div v-for="(slide, slideIndex) in slides" :key="slideIndex" class="swiper-slide w-[220px] py-3 px-2">
+            <div 
+                v-for="(slide, slideIndex) in slides" 
+                :key="slideIndex" 
+                class="swiper-slide w-[160px] py-3 px-2 md:w-[220px]"
+            >
                 <div class="bg-neutral-100 relative group">
                     <router-link
                         :to="{name: 'product-item', params: {id: 1}}"
@@ -21,7 +25,7 @@
 <script setup lang="ts">
 import { onMounted, onUnmounted, ref } from 'vue';
 import Swiper from 'swiper';
-import { initNotFoundPageSlider } from '@/scripts/initSliders';
+import { initTapeSlider } from '@/scripts/initSliders';
 import { routerPath } from '@/reactive/RouterPath';
 
 let slider: Swiper | null = null
@@ -66,7 +70,7 @@ const slides = ref([
 ])
 
 onMounted(() => {
-    slider = initNotFoundPageSlider()
+    slider = initTapeSlider()
 })
 
 onUnmounted(() => {

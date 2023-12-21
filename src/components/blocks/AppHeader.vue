@@ -50,12 +50,36 @@
                     <OffcanvasClose />
                     <nav class="text-[14px] leading-[1.3] font-medium hidden md:block lg:text-base">
                         <ul class="select-none flex items-center justify-center gap-5 lg:gap-8">
-                            <li><router-link :to="{name:'catalog'}" class="[&.is-active-link]:text-brand hover:text-brand">Каталог</router-link></li>
-                            <li><router-link :to="{name:'about'}" class="[&.is-active-link]:text-brand hover:text-brand">О нас</router-link></li>
-                            <li><router-link :to="{name:'articles'}" class="[&.is-active-link]:text-brand hover:text-brand">Новости</router-link></li>
-                            <li><router-link :to="{name:'delivery-and-payment'}" class="[&.is-active-link]:text-brand hover:text-brand">Доставка и оплата</router-link></li>
-                            <li><router-link :to="{name:'contacts'}" class="[&.is-active-link]:text-brand hover:text-brand">Контакты</router-link></li>
-                            <li><router-link :to="{name:'styles'}" class="[&.is-active-link]:text-brand hover:text-brand">Стили</router-link></li>
+                            <li>
+                                <router-link 
+                                    :to="{name:'catalog'}" class="decor-link [&.is-active-link]:text-brand"
+                                >Каталог</router-link>
+                            </li>
+                            <li>
+                                <router-link 
+                                    :to="{name:'about'}" class="decor-link [&.is-active-link]:text-brand"
+                                >О нас</router-link>
+                            </li>
+                            <li>
+                                <router-link 
+                                    :to="{name:'articles'}" class="decor-link [&.is-active-link]:text-brand"
+                                >Новости</router-link>
+                            </li>
+                            <li>
+                                <router-link 
+                                    :to="{name:'delivery-and-payment'}" class="decor-link [&.is-active-link]:text-brand"
+                                >Доставка и оплата</router-link>
+                            </li>
+                            <li>
+                                <router-link 
+                                    :to="{name:'contacts'}" class="decor-link [&.is-active-link]:text-brand"
+                                >Контакты</router-link>
+                            </li>
+                            <li>
+                                <router-link 
+                                    :to="{name:'styles'}" class="decor-link [&.is-active-link]:text-brand"
+                                >Стили</router-link>
+                            </li>
                         </ul>
                     </nav>
                     <AppSearch />

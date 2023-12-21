@@ -4,7 +4,12 @@ html {
 }
 
 body {
-    @apply relative min-h-[100vh] min-w-[320px] text-[16px];
+    @apply 
+        relative 
+        min-h-[100vh]
+        min-w-[320px]
+        text-[16px]
+    ;
 
     &.is-modal-open,
     &.is-offcanvas-open {

@@ -32,6 +32,7 @@
 
 <script setup lang="ts">
 import { routerPath } from '@/reactive/RouterPath'
+import { randomNumberBetween } from '@/utils/utils'
 
 const props = withDefaults(
     defineProps<{
@@ -41,8 +42,4 @@ const props = withDefaults(
         placement: 'page'
     }
 )
-
-function randomNumberBetween(min: number, max: number) {
-    return Math.floor(Math.random() * (max - min) + min)
-}
 </script>

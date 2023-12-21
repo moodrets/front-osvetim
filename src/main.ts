@@ -6,10 +6,11 @@ import '@/styles/main.scss'
 // scripts
 import { 
     initArticlesItemSlider,
-    initNotFoundPageSlider,
+    initTapeSlider,
     initProductItemSlider,
     initSlideshow
 } from '@/scripts/initSliders'
+import { initScrollAnimate } from '@/scripts/initScrollAnimate'
 
 // vue imports
 import { createApp } from 'vue'
@@ -72,12 +73,17 @@ createApp(App)
     .use(router)
 .mount('#app')
 
-/** 
- * Раскоментить когда сайт будет на laravel
+
 document.addEventListener('DOMContentLoaded', () => {
-    initArticlesItemSlider()
-    initNotFoundPageSlider()
-    initProductItemSlider()
-    initSlideshow()
+    /** 
+    * Раскоментить когда сайт будет на laravel
+        initArticlesItemSlider()
+        initTapeSlider()
+        initProductItemSlider()
+        initSlideshow()
+    **/
 })
-*/
+
+window.onload = () => {
+    initScrollAnimate()
+}

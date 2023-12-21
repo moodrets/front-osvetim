@@ -2,13 +2,12 @@
     <section class="main-about-block pt-10 pb-[100px]">
         <div class="centered">
             <div class="h1 mb-10 leading-[.9] lg:text-[98px] xl:max-w-[80%]">Качество<br>Широкий выбор<br>Комплексный подход</div>
-
             <div class="xl:flex xl:gap-4">
                 <div class="xl:flex-1 xl:min-w-0">
                     <div class="grid grid-cols-2 gap-y-5 pt-5 pb-12 border-t border-neutral border-opacity-40 xl:pb-0">
                         <span class="h-[1px] bg-neutral bg-opacity-40 col-span-2 row-start-2"></span>
                         <div
-                            v-for="(block, blockIndex) in values"
+                            v-for="(block, blockIndex) in descValues"
                             :key="blockIndex"
                             class="border-r border-neutral border-opacity-40 pt-8 pr-4 odd:pl-4 md:odd:border-opacity-0"
                         >
@@ -18,7 +17,9 @@
                     </div>
                 </div>
                 <div class="lg:flex-1 lg:min-w-0">
-                    <img class="w-full" :src="`${routerPath}img/main-about-pic.png`" alt="">
+                    <div data-scroll>
+                        <img class="w-full" :src="`${routerPath}img/main-about-pic.png`" alt="">
+                    </div>
                 </div>
             </div>
 
@@ -39,25 +40,6 @@
 </template>
 
 <script setup lang="ts">
-import { routerPath } from '@/reactive/RouterPath';
-import { ref } from 'vue'
-
-const values = ref([
-    {
-        value: '>1 000',
-        label: 'товаров'
-    },
-    {
-        value: '20',
-        label: 'партнеров'
-    },
-    {
-        value: '30',
-        label: 'поставщиков'
-    },
-    {
-        value: '189',
-        label: 'пунктов выдачи'
-    },
-])
+import { routerPath } from '@/reactive/RouterPath'
+import { descValues } from '@/reactive/DescValues'
 </script>

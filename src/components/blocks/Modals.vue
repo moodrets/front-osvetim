@@ -7,7 +7,7 @@
 	</AppModal>
 	<AppModal name="callbackModal">
 		<div class="h2">Напишите нам</div>
-		<CallbackForm></CallbackForm>
+		<CallbackForm />
 	</AppModal>
 	<AppModal name="geoLocationModal">
 		<div class="h2">Выберите город</div>

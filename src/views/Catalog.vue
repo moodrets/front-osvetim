@@ -33,10 +33,7 @@
             </div>
         </div>
     </main>
-    <Offcanvas 
-        name="mobileCatalogFilters"
-        class="xl:hidden" 
-    >
+    <Offcanvas name="mobileCatalogFilters">
         <CatalogFilters />
 	</Offcanvas>
 </template>

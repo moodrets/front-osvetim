@@ -5,8 +5,8 @@
         :class="{'is-open': state.isOpen}"
     >
         <div class="app-details__title" :class="titleClass">
-            <slot name="title"></slot>
-            <div 
+            <slot name="title" :toggle="onToggle"></slot>
+            <div
                 v-if="props.arrowVisible && slots.content"
                 class="app-details__arrow" 
                 @click="onToggle"

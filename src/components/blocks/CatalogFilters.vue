@@ -3,8 +3,8 @@
         <div class="text-[12px] leading-[1.4] uppercase mb-5 text-dark">Параметры:</div>
         <div class="text-[20px] font-semibold leading-[1.1] tracking-[-0.8px] space-y-1">
             <Details v-for="filter in filtersList">
-                <template #title>
-                    <a href="#" class="text-dark decor-link">{{ filter.name }}</a>
+                <template #title="{toggle}">
+                    <div @click="toggle" class="cursor-pointer">{{ filter.name }}</div>
                 </template>
                 <template #content>
                     <div class="flex py-2 gap-4">

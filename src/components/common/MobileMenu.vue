@@ -1,8 +1,5 @@
 <template>
-    <Offcanvas
-		name="mobileMenu"
-		class="md:hidden"
-	>
+    <Offcanvas name="mobileMenu">
 		<nav class="mb-8">
 			<ul class="text-[20px] leading-[1.1] flex flex-col">
 				<li class="border-b border-neutral-alpha">

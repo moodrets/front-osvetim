@@ -1,3 +1,4 @@
+import { randomNumberBetween } from "@/utils/utils";
 import Swiper from "swiper";
 import { Pagination, Navigation } from "swiper/modules";
 
@@ -21,8 +22,8 @@ export function initArticlesItemSlider(): Swiper {
     return slider
 }
 
-export function initNotFoundPageSlider(): Swiper {
-    const slider = new Swiper('.js-not-found-page-slider', {
+export function initTapeSlider(): Swiper {
+    const slider = new Swiper('.js-tape-slider', {
         slidesPerView: 'auto',
         speed: 600,
         spaceBetween: 0,
@@ -57,7 +58,7 @@ export function initProductItemSlider(): Swiper {
     return slider
 }
 
-export function initSlideshow(): Swiper {
+export function initSlideshow(): Swiper | Swiper[] {
     const slider = new Swiper('.js-slide-show', {
         modules: [Pagination, Navigation],
         speed: 600,
@@ -76,6 +77,12 @@ export function initSlideshow(): Swiper {
                 `
             }
         },
+        // for dev
+        on: {
+            init(swiper){
+                swiper.slideTo(randomNumberBetween(1, 6) - 1)
+            }
+        }
     });
 
     return slider
