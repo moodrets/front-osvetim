@@ -24,8 +24,6 @@ import { toast } from '@/composables/useToast'
 
 async function onSubmit() {
     modalToggle('callbackModal')
-    toast.show('success', 'Мы свяжемся с вами в ближайшее время', {
-        position: 'bottom-center'
-    })
+    toast.show('success', 'Мы свяжемся с вами в ближайшее время')
 }
 </script>

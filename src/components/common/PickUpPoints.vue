@@ -58,9 +58,7 @@ function addMapMarkersByLocation() {
     map.geoObjects.removeAll()
 
     if (currentLocation.value.pickUpPoints.length === 0 && props.showMessage) {
-        toast.show('error',`В городе ${currentLocation.value.city} не найдено пунктов выдачи`, {
-            position: 'bottom-left'
-        })
+        toast.show('error',`В городе ${currentLocation.value.city} не найдено пунктов выдачи`)
     }
 
     map.setCenter(currentLocation.value.latlng, 10, {
