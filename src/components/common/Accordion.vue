@@ -15,7 +15,10 @@
         </div>
         <div class="app-acc__body">
             <div style="min-height: 0;">
-                <slot name="body"></slot>
+                <slot name="body" 
+                    :isOpen="state.isOpen" 
+                    :toggle="onToggle"
+                ></slot>
             </div>
         </div>
     </div>
@@ -37,7 +40,9 @@ function onToggle() {
 }
 
 onBeforeMount(() => {
-    state.isOpen = props.open
+    if (state.isOpen !== props.open) {
+        state.isOpen = props.open
+    }
 })
 </script>
 

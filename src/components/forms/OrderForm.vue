@@ -45,7 +45,11 @@
                     <div>Курьерская доставка</div>
                 </label>
                 <div class="mt-6">
-                    <button type="button" class="app-button app-button--secondary">Выбрать пункт самовывоза</button>
+                    <button
+                        type="button"
+                        class="app-button app-button--secondary"
+                        v-modal-call="{name: 'pickUpPointsModal'}"
+                    >Выбрать пункт самовывоза</button>
                 </div>
             </div>
         </fieldset>

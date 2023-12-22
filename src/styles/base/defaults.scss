@@ -51,3 +51,31 @@ a:not(a[class]) {
         bg-brand
     ;
 }
+
+/* width */
+::-webkit-scrollbar {
+    @apply 
+        w-2.5
+    ;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    @apply bg-transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    @apply 
+        rounded-sm
+        bg-dark 
+        bg-opacity-40
+    ;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    @apply 
+        bg-opacity-60
+    ;
+}

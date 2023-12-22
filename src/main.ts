@@ -11,6 +11,7 @@ import {
     initSlideshow
 } from '@/scripts/initSliders'
 import { initScrollAnimate } from '@/scripts/initScrollAnimate'
+import { initContactsMap } from '@/scripts/initYandexMap'
 
 // vue imports
 import { createApp } from 'vue'
@@ -37,6 +38,7 @@ import OrderDetails from '@/components/common/OrderDetails.vue'
 import Offcanvas from '@/components/common/Offcanvas.vue'
 import OffcanvasClose from '@/components/common/OffcanvasClose.vue'
 import AppModal from '@/components/common/AppModal.vue'
+import PickUpPoints from '@/components/common/PickUpPoints.vue'
 import LoginForm from '@/components/forms/LoginForm.vue'
 import RegistrationForm from '@/components/forms/RegistrationForm.vue'
 import PasswordRecoveryForm from '@/components/forms/PasswordRecoveryForm.vue'
@@ -70,9 +72,9 @@ createApp(App)
     .component('Offcanvas', Offcanvas)
     .component('OffcanvasClose', OffcanvasClose)
     .component('AppModal', AppModal)
+    .component('PickUpPoints', PickUpPoints)
     .use(router)
 .mount('#app')
-
 
 document.addEventListener('DOMContentLoaded', () => {
     /** 
@@ -86,4 +88,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
 window.onload = () => {
     initScrollAnimate()
+    // initContactsMap()
 }

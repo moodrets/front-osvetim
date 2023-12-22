@@ -13,7 +13,7 @@
 		<div class="h2">Выберите город</div>
 		<GeoLocationList />
 	</AppModal>
-	<AppModal 
+	<AppModal
 		name="orderDetailsModal" 
 		:width="1080"
 	>

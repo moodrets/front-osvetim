@@ -17,7 +17,10 @@
                     </div>
                 </div>
             </div>
-            <slot></slot>
+            <slot
+                :onClose="onClose"
+                :isOpen="modalVisibleState[props.name]"
+            ></slot>
         </div>
     </div>
 </template>

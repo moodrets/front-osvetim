@@ -35,11 +35,18 @@
             </div>
         </div>
     </main>
-    <div id="contacts-map" class="grayscale overflow-hidden flex justify-center">
-        <img class="min-w-[800px] max-w-full" :src="`${routerPath}img/contacts-map.png`" alt="">
-    </div>
+    <div 
+        id="contacts-map" 
+        class="bg-neutral grayscale" 
+        style="height: 520px; width: 100%;"
+    ></div>
 </template>
 
 <script lang="ts" setup>
-import { routerPath } from '@/reactive/RouterPath';
+import { onMounted } from 'vue'
+import { initContactsMap } from '@/scripts/initYandexMap'
+
+onMounted(() => {
+    initContactsMap()
+})
 </script>

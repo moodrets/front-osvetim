@@ -42,11 +42,19 @@
 
                 </div>
             </div>
-
         </div>
     </main>
+    <AppModal 
+        name="pickUpPointsModal"
+        :width="1024"
+    >
+        <template #default="{isOpen}">
+            <div class="pr-8 md:pr-12">
+                <PickUpPoints 
+                    :selectPickUpPoint="true"
+                    :show-message="isOpen"
+                ></PickUpPoints>
+            </div>
+        </template>
+    </AppModal>
 </template>
-
-<script setup lang="ts">
-import OrderForm from '@/components/forms/OrderForm.vue';
-</script>
