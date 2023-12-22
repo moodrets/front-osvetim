@@ -134,10 +134,6 @@ onMounted(() => {
             controls: []
         });
 
-        map.events.add('click', function (e) {
-            map.balloon.open(e.get('coords'), 'Щелк!');
-        });
-
         addMapMarkersByLocation()
     });
 })
