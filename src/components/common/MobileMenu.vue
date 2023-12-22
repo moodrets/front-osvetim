@@ -35,7 +35,7 @@
 			</ul>
 		</nav>
 		<div class="mt-auto flex flex-col items-center">
-			<GeoLocation class="mb-8" />
+			<GeoLocation class="mb-8 font-medium" />
 			<div class="text-center flex flex-col items-center">
 				<a class="text-[20px] font-semibold leading-[1.1] tracking-[-0.8px]" href="tel:88126678226">
 					8 (812) 667-82-26

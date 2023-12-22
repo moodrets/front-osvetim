@@ -10,7 +10,7 @@
                     </router-link>
                 </div>
                 <div class="ml-auto flex items-center gap-4 pl-4 lg:gap-8">
-                    <GeoLocation class="text-[12px] hidden md:flex lg:text-[16px]" />
+                    <GeoLocation class="text-[12px] font-medium hidden md:flex lg:text-[16px]" />
                     <div class="text-center pt-2 hidden md:block lg:pt-4">
                         <a class="text-[14px] font-semibold leading-[1.1] tracking-[-0.8px] lg:text-[20px]" href="tel:88126678226">
                             8 (812) 667-82-26

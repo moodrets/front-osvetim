@@ -1,7 +1,7 @@
 <template>
     <div class="flex flex-col gap-5 lg:flex-row">
         <div class="lg:w-[320px] lg:flex-none">
-            <div class="flex items-center justify-between mb-2 pb-2 border-b border-neutral border-opacity-50">
+            <div class="flex items-center font-semibold justify-between mb-2 pb-2 border-b border-neutral border-opacity-50">
                 <GeoLocation></GeoLocation>
                 <div class="flex gap-1 font-semibold text-[14px] leading-[1.1] text-dark text-opacity-40">
                     <div>{{ currentLocation.pickUpPoints?.length || 0 }}</div>
@@ -69,9 +69,9 @@ function addMapMarkersByLocation() {
     currentLocation.value.pickUpPoints?.forEach(point => {
         const markerPoint = new ymaps.Placemark(point.latlng, {
             balloonContent: `
-                <div class="font-base font-semibold text-[14px]">
+                <div class="font-base font-semibold text-[14px] ${props.selectPickUpPoint ? 'cursor-pointer' : ''}">
                     <div class="mb-2.5">${point.address}</div>
-                    ${props.selectPickUpPoint ? `<div class="inline-block underline text-brand cursor-pointer js-select-point">Выбрать пункт</div>` : ''}
+                    ${props.selectPickUpPoint ? `<div class="inline-block underline text-brand js-select-point">Выбрать пункт</div>` : ''}
                 </div>
             `,
             iconCaption: '',
@@ -84,12 +84,12 @@ function addMapMarkersByLocation() {
             hideIconOnBalloonOpen: false
         })
 
-        markerPoint.events.add(['click'], function(event: any) {
-            map.setCenter(point.latlng, 16, {
-                duration: 400,
-                checkZoomRange: true
-            })
-        })
+        // markerPoint.events.add(['click'], function(event: any) {
+        //     map.setCenter(point.latlng, 16, {
+        //         duration: 400,
+        //         checkZoomRange: true
+        //     })
+        // })
 
         markerPoint.balloon.events.add(['click'], function(event: any) {
             try {
