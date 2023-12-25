@@ -87,6 +87,6 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 
 window.onload = () => {
-    initScrollAnimate()
+    // initScrollAnimate()
     // initContactsMap()
 }

@@ -1,5 +1,5 @@
 <template>
-    <section class="description-block py-5">
+    <section class="description-block py-5 overflow-hidden">
         <div class="centered">
             <div class="pt-5 border-t border-neutral-alpha mb-10 text-[14px] leading-[1.3] xl:mb-[100px]">Преимущества:</div>
             <div 
@@ -7,8 +7,8 @@
                 :key="itemIndex"
                 class="py-2 border-b border-neutral-alpha mb-4 xl:flex xl:gap-3"
             >
-                <div class="mb-4 font-semibold leading-[1.0] tracking-[-0.84px] text-[28px] md:text-[48px] xl:text-[76px] xl:flex-1 xl:min-w-0 xl:mb-0">{{ item.title }}</div>
-                <div class="text-[14px] leading-[1.3] tracking-[-0.28px] md:pb-5 xl:w-[274px] xl:flex-none xl:pb-0">{{ item.text }}</div>
+                <div class="mb-4 font-semibold leading-[1.0] tracking-[-0.84px] text-[28px] md:text-[48px] xl:text-[76px] xl:flex-1 xl:min-w-0 xl:mb-0" data-animated-block="fadeInRight">{{ item.title }}</div>
+                <div class="text-[14px] leading-[1.3] tracking-[-0.28px] md:pb-5 xl:w-[274px] xl:flex-none xl:pb-0" data-animated-block="zoomIn">{{ item.text }}</div>
             </div>
         </div>
     </section>

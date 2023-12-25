@@ -1,7 +1,10 @@
 <template>
     <section class="main-about-block pt-10 pb-[100px]">
         <div class="centered">
-            <div class="h1 mb-10 leading-[.9] lg:text-[98px] xl:max-w-[80%]">Качество<br>Широкий выбор<br>Комплексный подход</div>
+            <div 
+                data-animated-block="fadeInRight" 
+                class="h1 mb-10 leading-[.9] lg:text-[98px] xl:max-w-[80%]"
+            >Качество<br>Широкий выбор<br>Комплексный подход</div>
             <div class="xl:flex xl:gap-4">
                 <div class="xl:flex-1 xl:min-w-0">
                     <div class="grid grid-cols-2 gap-y-5 pt-5 pb-12 border-t border-neutral border-opacity-40 xl:pb-0">
@@ -10,6 +13,7 @@
                             v-for="(block, blockIndex) in descValues"
                             :key="blockIndex"
                             class="border-r border-neutral border-opacity-40 pt-8 pr-4 odd:pl-4 md:odd:border-opacity-0"
+                            data-animated-block="fadeInRight"
                         >
                             <div class="text-[36px] leading-[1.0] font-semibold mb-2 md:text-[48px]">{{ block.value }}</div>
                             <div class="text-[14px] leading-[1.0] tracking-[-0.28px] md:text-[16px]" v-html=block.label></div>
@@ -17,13 +21,13 @@
                     </div>
                 </div>
                 <div class="lg:flex-1 lg:min-w-0">
-                    <div data-scroll>
+                    <div data-animated-block="fadeInDown">
                         <img class="w-full" :src="`${routerPath}img/main-about-pic.png`" alt="">
                     </div>
                 </div>
             </div>
 
-            <div class="mt-16 xl:flex xl:gap-4">
+            <div class="mt-16 xl:flex xl:gap-4" data-animated-block="fadeInDown">
                 <div class="xl:flex-1 xl:min-w-0">
                     <div class="h6">О нас</div>
                 </div>
