@@ -12,7 +12,7 @@
                             <input class="app-form-control" type="text" placeholder="от">
                         </div>
                         <div class="flex-1 min-w-0">
-                            <input class="app-form-control" type="text" placeholder="от">
+                            <input class="app-form-control" type="text" placeholder="до">
                         </div>
                     </div>
                 </template>
