@@ -12,6 +12,7 @@ import {
 } from '@/scripts/initSliders'
 import { initScrollAnimate } from '@/scripts/initScrollAnimate'
 import { initContactsMap } from '@/scripts/initYandexMap'
+import { initDemoLampScene } from '@/scripts/threeLampScene'
 
 // vue imports
 import { createApp } from 'vue'
@@ -46,6 +47,7 @@ import OrderForm from '@/components/forms/OrderForm.vue'
 import PersonalDataForm from '@/components/forms/PersonalDataForm.vue'
 import PersonalPasswordForm from '@/components/forms/PersonalPasswordForm.vue'
 import CallbackForm from '@/components/forms/CallbackForm.vue'
+
 
 createApp(App)
     .directive('scroll-to', ScrollToDirective)
@@ -89,4 +91,5 @@ document.addEventListener('DOMContentLoaded', () => {
 window.onload = () => {
     // initScrollAnimate()
     // initContactsMap()
+    initDemoLampScene()
 }

@@ -1,7 +1,7 @@
 [data-animated-block] {
     opacity: 0;
     visibility: hidden;
-    transition: 1.2s cubic-bezier(.23,1,.32,1);
+    transition: 1.2s .15s cubic-bezier(.23,1,.32,1);
 }
 
 [data-animated-block="fadeInLeft"] {

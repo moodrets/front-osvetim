@@ -1,5 +1,6 @@
 <template>
-    <section class="present-block overflow-hidden">
+    <section class="main-present-block overflow-hidden">
+        <div id="header-lamp-right" class="h-[600px] w-[600px] absolute z-[10] top-12 right-0 hidden xl:block"></div>
         <div class="relative centered text-center flex flex-col items-center py-20 md:py-24 lg:py-32">
             <div class="text-left text-[14px] tracking-[-0.28px] absolute left-16 top-16 hidden xl:block" data-animated-block="fadeInRight">
                 Интернет-магазин<br> осветительных приборов

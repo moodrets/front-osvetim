@@ -7,11 +7,12 @@
             <div class="pt-5 mb-[100px]">Ассортимент магазина:</div>
             <div class="text-[48px] mb-3 leading-[0.9] font-semibold md:text-[96px]" data-animated-block="fadeInDown">33 982</div>
             <div class="text-[28px] text-white text-opacity-50 mb-10 font-semibold leading-[1.1] md:text-[36px]" data-animated-block="fadeInDown">уникальных товаров для Вас и Ваших близких</div>
-            <router-link 
-                :to="{name: 'catalog'}"
-                class="app-button app-button--light"
-                data-animated-block="zoomIn"
-            >в каталог</router-link>
+            <div data-animated-block="zoomIn">
+                <router-link 
+                    :to="{name: 'catalog'}"
+                    class="app-button app-button--light"
+                >в каталог</router-link>
+            </div>
         </div>
         <TapeSlider class="mt-20" />
     </Banner>
