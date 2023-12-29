@@ -12,7 +12,7 @@ import {
 } from '@/scripts/initSliders'
 import { initScrollAnimate } from '@/scripts/initScrollAnimate'
 import { initContactsMap } from '@/scripts/initYandexMap'
-import { initDemoLampScene } from '@/scripts/threeLampScene'
+import { ThreeLampScene } from '@/scripts/threeLampScene'
 
 // vue imports
 import { createApp } from 'vue'
@@ -47,6 +47,7 @@ import OrderForm from '@/components/forms/OrderForm.vue'
 import PersonalDataForm from '@/components/forms/PersonalDataForm.vue'
 import PersonalPasswordForm from '@/components/forms/PersonalPasswordForm.vue'
 import CallbackForm from '@/components/forms/CallbackForm.vue'
+import { routerPath } from './reactive/RouterPath'
 
 
 createApp(App)
@@ -91,5 +92,9 @@ document.addEventListener('DOMContentLoaded', () => {
 window.onload = () => {
     // initScrollAnimate()
     // initContactsMap()
-    initDemoLampScene()
+    new ThreeLampScene({
+        texturePath: `${routerPath}models/demo-model/textrures/`,
+        filePath: `${routerPath}models/demo-model/file2.fbx`,
+        renderElem: document.querySelector('#header-lamp-right')
+    } as any)
 }

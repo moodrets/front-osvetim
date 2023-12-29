@@ -1,4 +1,4 @@
-class ThreeLampScene {
+export class ThreeLampScene {
     #scene = null
     #camera = null
     #renderer = null
@@ -70,12 +70,4 @@ class ThreeLampScene {
             this.#object.rotateOnAxis(axis, speed)
         })
     }
-}
-
-export function initDemoLampScene() {
-    new ThreeLampScene({
-        texturePath: '/models/demo-model/textrures/',
-        filePath: '/models/demo-model/file2.fbx',
-        renderElem: document.querySelector('#header-lamp-right')
-    })
 }
