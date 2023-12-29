@@ -29,13 +29,17 @@ export class ThreeLampScene {
         this.#camera = new THREE.PerspectiveCamera(10.2, this.#renderElem.offsetWidth/this.#renderElem.offsetHeight, 1, 5000)
         this.#camera.position.z = 1000
 
-        let light1 = new THREE.HemisphereLight(0xffffff, 0x444444, 1.0)
+        let light1 = new THREE.HemisphereLight(0xffffff, 0x444444, 1.5)
         light1.position.set(0, 1, 0)
         this.#scene.add(light1)
 
-        let light2 = new THREE.DirectionalLight(0xffffff, 1.0)
+        let light2 = new THREE.DirectionalLight(0xffffff, 1.5)
         light2.position.set(0, 1, 0)
         this.#scene.add(light2)
+
+        let light3 = new THREE.DirectionalLight(0xffffff, 0.8)
+        light3.position.set(0, -3, 0)
+        this.#scene.add(light3)
 
         this.#renderer = new THREE.WebGLRenderer({
             antialias: true,

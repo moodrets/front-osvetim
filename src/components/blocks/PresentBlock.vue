@@ -35,5 +35,15 @@
 </template>
 
 <script lang="ts" setup>
-import { routerPath } from '@/reactive/RouterPath';
+import { routerPath } from '@/reactive/RouterPath'
+import { onMounted } from 'vue'
+import { ThreeLampScene } from '@/scripts/threeLampScene'
+
+onMounted(() => {
+    new ThreeLampScene({
+        texturePath: `${routerPath}models/demo-model/textrures/`,
+        filePath: `${routerPath}models/demo-model/file2.fbx`,
+        renderElem: document.querySelector('#header-lamp-right'),
+    } as any)
+})
 </script>
