@@ -2,6 +2,7 @@ import { RouteRecordRaw, createRouter, createWebHistory } from 'vue-router'
 import { routerPath } from '@/reactive/RouterPath'
 import { offcanvasClose } from '@/composables/useOffcanvas'
 import { initScrollAnimate } from '@/scripts/initScrollAnimate'
+import { initThreeObjects } from '@/scripts/initThreeObjects'
 
 // views
 import DefaultLayout from '@/layouts/Default.vue'
@@ -27,7 +28,6 @@ import PersonalPassword from '@/views/PersonalPassword.vue'
 import Favorites from '@/views/Favorites.vue'
 import Catalog from '@/views/Catalog.vue'
 import ProductView from '@/views/ProductView.vue'
-
 
 const routes: RouteRecordRaw[] = [
     {
@@ -166,13 +166,13 @@ const router = createRouter({
 
 router.beforeEach(() => {
     offcanvasClose()
-    initScrollAnimate()
 })
 
 router.afterEach(() => {
     setTimeout(() => {
         initScrollAnimate()
-    }, 0)
+        initThreeObjects()
+    }, 100)
 })
 
 export default router
