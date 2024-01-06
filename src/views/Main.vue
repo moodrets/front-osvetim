@@ -1,17 +1,21 @@
 <template>
     <PresentBlock></PresentBlock>
     <ValuesBlock></ValuesBlock>
-    <Banner
-        :img="`${routerPath}banners/banner-2.png`"
-        class="flex"
-    >
-        <div class="m-auto text-center w-[460px] max-w-full px-5">
-            <div class="h1 text-white mb-5">Баннер</div>
-            <div>
-                <a href="#" class="app-button app-button--light">Смотреть</a>
+    <div class="relative">
+        <div class="three-lamp three-lamp--banner-main"></div>
+        <Banner
+            :img="`${routerPath}banners/banner-2.png`"
+            class="flex"
+        >
+            
+            <div class="m-auto text-center w-[460px] max-w-full px-5">
+                <div class="h1 text-white mb-5">Баннер</div>
+                <div>
+                    <a href="#" class="app-button app-button--light">Смотреть</a>
+                </div>
             </div>
-        </div>
-    </Banner>
+        </Banner>
+    </div>
     <MainCategories></MainCategories>
     <div class="centered">
         <div class="products-block pt-5 mb-10 border-t border-neutral-alpha md:mb-20">

@@ -12,6 +12,7 @@ import {
 } from '@/scripts/initSliders'
 import { initScrollAnimate } from '@/scripts/initScrollAnimate'
 import { initContactsMap } from '@/scripts/initYandexMap'
+import { initThreeObjects } from '@/scripts/initThreeObjects'
 
 // vue imports
 import { createApp } from 'vue'
@@ -89,4 +90,5 @@ document.addEventListener('DOMContentLoaded', () => {
 window.onload = () => {
     // initScrollAnimate()
     // initContactsMap()
+    // initThreeObjects()
 }

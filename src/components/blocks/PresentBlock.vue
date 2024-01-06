@@ -1,6 +1,7 @@
 <template>
-    <section class="main-present-block overflow-hidden relative">
-        <div id="header-lamp-right" class="h-[600px] w-[600px] absolute z-[10] -top-20 -right-40 hidden xl:block"></div>
+    <section class="main-present-block overflow-hidden relative z-[1]">
+        <div class="three-lamp three-lamp--header-right"></div>
+        <div class="three-lamp three-lamp--header-left"></div>
         <div class="relative centered text-center flex flex-col items-center py-20 md:py-24 lg:py-32">
             <div class="text-left text-[14px] tracking-[-0.28px] absolute left-16 top-16 hidden xl:block" data-animated-block="fadeInRight">
                 Интернет-магазин<br> осветительных приборов
@@ -14,7 +15,7 @@
             >
                 Светлые<br> решения<br> для жизни
             </div>
-            <div class="text-[14px] tracking-[-0.28px] xl:hidden">
+            <div class="text-[14px] tracking-[-0.28px] xl:hidden" data-animated-block="fadeInUp">
                 Интернет-магазин<br> осветительных приборов
             </div>
             <div class="floating-block text-left min-w-[270px] absolute right-16 bottom-16 hidden xl:block">

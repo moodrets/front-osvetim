@@ -59,9 +59,6 @@ export class ThreeLampScene {
                 this.modelMoveAnimationSettings.direction = 'right'
             }
         }
-        // const axis = new THREE.Vector3(0, 1, 0).normalize();
-        // const speed = 0.001;
-        // this.model.rotateOnAxis(axis, speed)
     }
 
     animateScene() {
@@ -75,7 +72,7 @@ export class ThreeLampScene {
             return
         }
         this.scene = new THREE.Scene()
-        this.camera = new THREE.PerspectiveCamera(10.2, this.renderElem.offsetWidth/this.renderElem.offsetHeight, 1, 5000)
+        this.camera = new THREE.PerspectiveCamera(10.2, this.renderElem.offsetWidth / this.renderElem.offsetHeight, 1, 5000)
         this.camera.position.z = 1000
 
         let light1 = new THREE.HemisphereLight(0xffffff, 0x444444, 1.5)
@@ -115,13 +112,14 @@ export class ThreeLampScene {
             this.model.rotation.y += this.modelInitialRotation.y
             this.model.rotation.z += this.modelInitialRotation.z
             this.animateScene()
+            this.renderElem.classList.add('is-loaded')
         })
 
-        this.renderElem.addEventListener('wheel', (event) => {
-            event.preventDefault()
-            const axis = new THREE.Vector3(0, 1, 0).normalize();
-            const speed = event.deltaY * 0.001;
-            this.model.rotateOnAxis(axis, speed)
-        })
+        // this.renderElem.addEventListener('wheel', (event) => {
+        //     event.preventDefault()
+        //     const axis = new THREE.Vector3(0, 1, 0).normalize();
+        //     const speed = event.deltaY * 0.001;
+        //     this.model.rotateOnAxis(axis, speed)
+        // })
     }
 }

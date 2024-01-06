@@ -1,0 +1,70 @@
+.three-lamp {
+    @apply
+        transform-gpu
+        transition-opacity
+        duration-300
+        opacity-0
+        pointer-events-none
+        absolute
+    ;
+
+    &--header-right {
+        @apply
+            -z-[1]
+            w-[340px]
+            h-[340px]
+            top-[20%]
+            left-[80%]
+            md:w-[460px]
+            md:h-[460px]
+            md:left-[70%]
+            md:top-[10%]
+            xl:w-[600px]
+            xl:h-[600px]
+            xl:-top-[80px]
+            xl:left-auto
+            xl:-right-[150px]
+        ;
+    }
+
+    &--header-left {
+        @apply
+            -z-[1]
+            h-[180px]
+            w-[180px]
+            top-0
+            left-0
+            -translate-x-[60%]
+            blur-[10px]
+            md:w-[260px]
+            md:h-[260px]
+            md:-translate-x-[70%]
+            md:top-[20%]
+            xl:top-[40%]
+            xl:-translate-x-[40%]
+        ;
+    }
+
+    &--banner-main {
+        @apply 
+            z-[20]
+            h-[230px]
+            w-[230px]
+            top-0
+            left-[80px]
+            -translate-y-[15%]
+            md:left-[110px]
+            md:h-[300px]
+            md:w-[300px]
+            md:-translate-y-[20%]
+            xl:h-[360px]
+            xl:w-[360px]
+        ;
+    }
+
+    &.is-loaded {
+        @apply 
+            opacity-100
+        ;
+    }
+}
