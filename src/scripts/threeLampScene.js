@@ -71,6 +71,7 @@ export class ThreeLampScene {
         if (!this.renderElem) {
             return
         }
+        this.renderElem.innerHTML = ''
         this.scene = new THREE.Scene()
         this.camera = new THREE.PerspectiveCamera(10.2, this.renderElem.offsetWidth / this.renderElem.offsetHeight, 1, 5000)
         this.camera.position.z = 1000

@@ -2,7 +2,7 @@
     @apply
         transform-gpu
         transition-opacity
-        duration-300
+        duration-[.9s]
         opacity-0
         pointer-events-none
         absolute
@@ -21,7 +21,7 @@
             md:top-[10%]
             xl:w-[600px]
             xl:h-[600px]
-            xl:-top-[80px]
+            xl:-top-[60px]
             xl:left-auto
             xl:-right-[150px]
         ;
@@ -59,6 +59,46 @@
             md:-translate-y-[20%]
             xl:h-[360px]
             xl:w-[360px]
+        ;
+    }
+
+    &--subscribe-left {
+        @apply 
+            -z-[1]
+            w-[300px]
+            h-[300px]
+            left-0
+            blur-[10px]
+            -translate-x-[70%]
+        ;
+    }
+
+    &--subscribe-right {
+        @apply 
+            -z-[1]
+            w-[620px]
+            h-[620px]
+            right-0
+            bottom-0
+            translate-x-[40%]
+        ;
+    }
+
+    &--footer {
+        @apply 
+            -z-[1]
+            w-[330px]
+            h-[330px]
+            left-0
+            top-[30%]
+            -translate-x-[50%]
+            hidden
+            md:block
+            md:w-[360px]
+            md:h-[360px]
+            lg:top-[35%]
+            lg:-translate-x-[140%]
+            lg:left-1/2
         ;
     }
 

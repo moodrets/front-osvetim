@@ -1,5 +1,6 @@
 <template>
-    <footer class="app-footer bg-dark pt-5 py-3 text-white flex-none">
+    <footer class="app-footer bg-dark pt-5 py-3 text-white flex-none relative z-[10]">
+        <div class="three-lamp three-lamp--footer"></div>
         <div class="centered">
             <div class="app-logo app-logo--footer select-none">
                 <router-link :to="{name: 'main'}">
@@ -9,7 +10,7 @@
             <div class="text-center mt-4 select-none">
                 <img class="max-w-[230px] lg:max-w-full inline-block" :src="`${routerPath}img/slogan-light.svg`" alt="" />
             </div>
-            <div class="flex items-start justify-center gap-2 mt-8 text-[14px] leading-[1.4] tracking-[-0.28px] md:justify-between lg:mt-20">
+            <div class="flex items-start justify-center gap-2 mt-8 text-[14px] leading-[1.4] tracking-[-0.28px] md:justify-between md:mt-[100px]">
                 <div class="opacity-40 hidden md:block md:w-1/3">Навигация:</div>
                 <nav class="md:w-1/3">
                     <ul class="text-center">
