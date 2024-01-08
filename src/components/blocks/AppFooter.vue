@@ -14,14 +14,14 @@
                 <div class="opacity-40 hidden md:block md:w-1/3">Навигация:</div>
                 <nav class="md:w-1/3">
                     <ul class="text-center">
-                        <li><a href="#" class="hover:underline">Люстры</a></li>
-                        <li><a href="#" class="hover:underline">Светильники</a></li>
-                        <li><a href="#" class="hover:underline">Настенные светильники</a></li>
-                        <li><a href="#" class="hover:underline">Торшеры</a></li>
-                        <li><a href="#" class="hover:underline">Уличный свет</a></li>
-                        <li><a href="#" class="hover:underline">Настольные лампы</a></li>
-                        <li><a href="#" class="hover:underline">Трековое освещение</a></li>
-                        <li><a href="#" class="hover:underline">Встраиваемые светильники</a></li>
+                        <li><a href="#" class="decor-link">Люстры</a></li>
+                        <li><a href="#" class="decor-link">Светильники</a></li>
+                        <li><a href="#" class="decor-link">Настенные светильники</a></li>
+                        <li><a href="#" class="decor-link">Торшеры</a></li>
+                        <li><a href="#" class="decor-link">Уличный свет</a></li>
+                        <li><a href="#" class="decor-link">Настольные лампы</a></li>
+                        <li><a href="#" class="decor-link">Трековое освещение</a></li>
+                        <li><a href="#" class="decor-link">Встраиваемые светильники</a></li>
                     </ul>
                 </nav>
                 <div class="opacity-40 hidden md:block md:w-1/3 md:text-right">Контакты:</div>
@@ -29,13 +29,13 @@
             <div class="flex flex-col items-center gap-2 mt-8 pt-8 border-t border-neutral border-opacity-40 md:flex-row md:mt-20 md:justify-between md:border-none md:pt-0">
                 <nav class="hidden md:block md:w-1/3">
                     <ul class="text-[14px] leading-[1.4] tracking-[-0.28px]">
-                        <li><router-link :to="{name:'catalog'}" class="[&.is-active-link]:underline hover:underline">Каталог</router-link></li>
-                        <li><router-link :to="{name:'about'}" class="[&.is-active-link]:underline hover:underline">О нас</router-link></li>
-                        <li><router-link :to="{name:'articles'}" class="[&.is-active-link]:underline hover:underline">Новости</router-link></li>
-                        <li><router-link :to="{name:'delivery-and-payment'}" class="[&.is-active-link]:underline hover:underline">Доставка и оплата</router-link></li>
-                        <li><router-link :to="{name:'contacts'}" class="[&.is-active-link]:underline hover:underline">Контакты</router-link></li>
-                        <li><router-link :to="{name:'login'}" class="[&.is-active-link]:underline hover:underline">Вход</router-link></li>
-                        <li><router-link :to="{name:'registration'}" class="[&.is-active-link]:underline hover:underline">Регистрация</router-link></li>
+                        <li><router-link :to="{name:'catalog'}" class="decor-link">Каталог</router-link></li>
+                        <li><router-link :to="{name:'about'}" class="decor-link">О нас</router-link></li>
+                        <li><router-link :to="{name:'articles'}" class="decor-link">Новости</router-link></li>
+                        <li><router-link :to="{name:'delivery-and-payment'}" class="decor-link">Доставка и оплата</router-link></li>
+                        <li><router-link :to="{name:'contacts'}" class="decor-link">Контакты</router-link></li>
+                        <li><router-link :to="{name:'login'}" class="decor-link">Вход</router-link></li>
+                        <li><router-link :to="{name:'registration'}" class="decor-link">Регистрация</router-link></li>
                     </ul>
                 </nav>
                 <div class="flex flex-col items-center md:w-1/3">

@@ -21,5 +21,6 @@
         before:duration-[0.3s]
         hover:before:scale-x-100
         hover:before:origin-left
+        [&.is-active-link]:before:scale-x-100
     ;
 }
