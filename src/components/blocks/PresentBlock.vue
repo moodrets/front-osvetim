@@ -1,7 +1,7 @@
 <template>
     <section class="main-present-block overflow-hidden relative z-[1]">
-        <div class="three-lamp three-lamp--header-right"></div>
-        <div class="three-lamp three-lamp--header-left"></div>
+        <div class="three-lamp three-lamp--main-right"></div>
+        <div class="three-lamp three-lamp--main-left"></div>
         <div class="relative centered text-center flex flex-col items-center py-20 md:py-24 lg:py-32">
             <div class="text-left text-[14px] tracking-[-0.28px] absolute left-16 top-16 hidden xl:block" data-animated-block="fadeInRight">
                 Интернет-магазин<br> осветительных приборов

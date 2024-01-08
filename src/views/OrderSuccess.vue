@@ -1,5 +1,7 @@
 <template>
-    <main class="py-12 flex-1 flex flex-col lg:py-20">
+    <main class="overflow-hidden relative py-12 flex-1 flex flex-col lg:py-20">
+        <div class="three-lamp three-lamp--main-right"></div>
+        <div class="three-lamp three-lamp--main-left"></div>
         <div class="text-center max-w-[270px] m-auto">
             <h1>Спасибо за заказ!</h1>
             <p class="text-style-base">Наш менеджер свяжется с вами в ближайшее время.</p>

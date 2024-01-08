@@ -1,5 +1,5 @@
 <template>
-    <section class="py-12 md:py-16 bg-white relative z-[20]">
+    <section class="py-12 md:py-16 bg-white relative z-[20] js-subscribe-block">
         <div class="absolute -top-[100px] -bottom-[300px] left-0 right-0 z-[10] pointer-events-none overflow-hidden hidden lg:block">
             <div class="three-lamp three-lamp--subscribe-left"></div>
             <div class="three-lamp three-lamp--subscribe-right"></div>

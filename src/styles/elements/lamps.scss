@@ -8,7 +8,7 @@
         absolute
     ;
 
-    &--header-right {
+    &--main-right {
         @apply
             -z-[1]
             w-[340px]
@@ -21,13 +21,13 @@
             md:top-[10%]
             xl:w-[600px]
             xl:h-[600px]
-            xl:-top-[60px]
+            xl:top-[0]
             xl:left-auto
             xl:-right-[150px]
         ;
     }
 
-    &--header-left {
+    &--main-left {
         @apply
             -z-[1]
             h-[180px]
@@ -76,11 +76,13 @@
     &--subscribe-right {
         @apply 
             -z-[1]
-            w-[620px]
-            h-[620px]
             right-0
             bottom-0
             translate-x-[40%]
+            w-[620px]
+            h-[620px]
+            hidden
+            xl:block
         ;
     }
 
@@ -96,9 +98,9 @@
             md:block
             md:w-[360px]
             md:h-[360px]
-            lg:top-[35%]
-            lg:-translate-x-[140%]
-            lg:left-1/2
+            xl:top-[35%]
+            xl:-translate-x-[140%]
+            xl:left-1/2
         ;
     }
 

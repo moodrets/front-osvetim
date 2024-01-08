@@ -3,12 +3,21 @@ import { ThreeLampScene } from '@/scripts/threeLampScene'
 
 export function initThreeObjects() {
 
-    const TABLET_BREAKPOINT = window.matchMedia("(max-width: 769px)")
+    function getElementOffsetTop(selector: string) {
+        let offset = 0;
+        let element = document.querySelector(selector)
 
-    const headerRightLamp: Record<any, any> = new ThreeLampScene({
+        if (element) {
+            offset =  element.getBoundingClientRect().top + window.scrollY - element.getBoundingClientRect().height
+        }
+
+        return offset
+    }
+
+    const mainRightLamp: Record<any, any> = new ThreeLampScene({
         texturePath: `${routerPath}models/demo-model/textrures/`,
         filePath: `${routerPath}models/demo-model/file2.fbx`,
-        renderElem: document.querySelector('.three-lamp--header-right'),
+        renderElem: document.querySelector('.three-lamp--main-right'),
         modelInitialRotation: {
             x: -.6,
             z: -.4,
@@ -16,10 +25,10 @@ export function initThreeObjects() {
         }
     } as any)
 
-    const headerLeftLamp: Record<any, any> = new ThreeLampScene({
+    const mainLeftLamp: Record<any, any> = new ThreeLampScene({
         texturePath: `${routerPath}models/demo-model/textrures/`,
         filePath: `${routerPath}models/demo-model/file2.fbx`,
-        renderElem: document.querySelector('.three-lamp--header-left'),
+        renderElem: document.querySelector('.three-lamp--main-left'),
         modelInitialRotation: {
             x: -.8,
             z: .4,
@@ -72,7 +81,7 @@ export function initThreeObjects() {
         filePath: `${routerPath}models/demo-model/file2.fbx`,
         renderElem: document.querySelector('.three-lamp--subscribe-right'),
         modelInitialRotation: {
-            x: -.6,
+            x: -.09,
             z: -.4,
             y: 0
         }
@@ -83,7 +92,7 @@ export function initThreeObjects() {
         filePath: `${routerPath}models/demo-model/file2.fbx`,
         renderElem: document.querySelector('.three-lamp--footer'),
         modelInitialRotation: {
-            x: TABLET_BREAKPOINT.matches ? 1.8 : -1.1,
+            x: -2.2,
             z: .4,
             y: 0
         },
@@ -97,6 +106,8 @@ export function initThreeObjects() {
 
     let lastKnownScrollPosition = 0;
     let deltaY = 0;
+    let footerOffseTop = getElementOffsetTop('.js-app-footer')
+    let subscribeBlockOffsetTop = getElementOffsetTop('.js-subscribe-block')
 
     function moveThreeObjectsOnScroll(event: any) {
         let ticking = false;
@@ -108,13 +119,13 @@ export function initThreeObjects() {
                 lastKnownScrollPosition = window.scrollY;
 
                 if (window.scrollY > 0) {
-                    if (headerRightLamp.model) {
-                        headerRightLamp.model.rotation.x -= deltaY * 0.0025
+                    if (mainLeftLamp.model) {
+                        mainLeftLamp.model.rotation.x += deltaY * 0.0016
+                        mainLeftLamp.model.rotation.z -= deltaY * 0.0018
                     }
 
-                    if (headerLeftLamp.model) {
-                        headerLeftLamp.model.rotation.x += deltaY * 0.0016
-                        headerLeftLamp.model.rotation.z += deltaY * 0.0018
+                    if (mainRightLamp.model) {
+                        mainRightLamp.model.rotation.x -= deltaY * 0.0025
                     }
 
                     if (mainBannerLamp.model) {
@@ -125,11 +136,11 @@ export function initThreeObjects() {
                         subscribeLeftLamp.model.rotation.x -= deltaY * 0.002
                     }
 
-                    // if (subscribeRightLamp.model) {
-                    //     subscribeRightLamp.model.rotation.x -= deltaY * 0.00025
-                    // }
+                    if (subscribeRightLamp.model && window.scrollY > subscribeBlockOffsetTop) {
+                        subscribeRightLamp.model.rotation.x -= deltaY * 0.002
+                    }
 
-                    if (footerLamp.model) {
+                    if (footerLamp.model && window.scrollY > footerOffseTop) {
                         footerLamp.model.rotation.x += deltaY * 0.002
                     }
                 }

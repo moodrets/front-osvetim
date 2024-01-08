@@ -1,5 +1,7 @@
 <template>
-    <main class="py-12 lg:py-20">
+    <main class="py-12 lg:py-20 relative overflow-hidden">
+        <div class="three-lamp three-lamp--main-right"></div>
+        <div class="three-lamp three-lamp--main-left"></div>
         <div class="centered">
             <div class="font-semibold text-center flex flex-col items-center max-w-[540px] mx-auto">
                 <div class="text-base font-normal mb-20 lg:mb-32">Контактная информация:</div>

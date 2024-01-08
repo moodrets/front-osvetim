@@ -1,5 +1,5 @@
 <template>
-    <footer class="app-footer bg-dark pt-5 py-3 text-white flex-none relative z-[10]">
+    <footer class="app-footer bg-dark pt-5 py-3 text-white flex-none relative z-[10] js-app-footer">
         <div class="three-lamp three-lamp--footer"></div>
         <div class="centered">
             <div class="app-logo app-logo--footer select-none">
