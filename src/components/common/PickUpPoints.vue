@@ -9,7 +9,7 @@
                     <div>{{ allPickUpPointsLength }}</div>
                 </div>
             </div>
-            <div class="overflow-y-auto pr-2" style="max-height: 438px;">
+            <div class="overflow-y-auto pr-2 max-h-[215px] md:max-h-[242px] xl:max-h-[440px]">
                 <div
                     v-for="(point, pointIndex) in currentLocation.pickUpPoints"
                     :key="pointIndex"
