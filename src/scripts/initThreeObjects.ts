@@ -15,8 +15,8 @@ export function initThreeObjects() {
     }
 
     const mainRightLamp: Record<any, any> = new ThreeLampScene({
-        texturePath: `${routerPath}models/demo-model/textrures/`,
-        filePath: `${routerPath}models/demo-model/file2.fbx`,
+        texturePath: `${routerPath}models/demo-model/textures/metal.jpg`,
+        filePath: `${routerPath}models/demo-model/model.fbx`,
         renderElem: document.querySelector('.three-lamp--main-right'),
         modelInitialRotation: {
             x: -.6,
@@ -26,8 +26,8 @@ export function initThreeObjects() {
     } as any)
 
     const mainLeftLamp: Record<any, any> = new ThreeLampScene({
-        texturePath: `${routerPath}models/demo-model/textrures/`,
-        filePath: `${routerPath}models/demo-model/file2.fbx`,
+        texturePath: `${routerPath}models/demo-model/textures/metal.jpg`,
+        filePath: `${routerPath}models/demo-model/model.fbx`,
         renderElem: document.querySelector('.three-lamp--main-left'),
         modelInitialRotation: {
             x: -.8,
@@ -43,8 +43,8 @@ export function initThreeObjects() {
     } as any)
 
     const mainBannerLamp: Record<any, any> = new ThreeLampScene({
-        texturePath: `${routerPath}models/demo-model/textrures/`,
-        filePath: `${routerPath}models/demo-model/file2.fbx`,
+        texturePath: `${routerPath}models/demo-model/textures/metal.jpg`,
+        filePath: `${routerPath}models/demo-model/model.fbx`,
         renderElem: document.querySelector('.three-lamp--banner-main'),
         modelInitialRotation: {
             x: 0.6,
@@ -60,8 +60,8 @@ export function initThreeObjects() {
     } as any)
 
     const subscribeLeftLamp: Record<any, any> = new ThreeLampScene({
-        texturePath: `${routerPath}models/demo-model/textrures/`,
-        filePath: `${routerPath}models/demo-model/file2.fbx`,
+        texturePath: `${routerPath}models/demo-model/textures/metal.jpg`,
+        filePath: `${routerPath}models/demo-model/model.fbx`,
         renderElem: document.querySelector('.three-lamp--subscribe-left'),
         modelInitialRotation: {
             x: -3.6,
@@ -77,8 +77,8 @@ export function initThreeObjects() {
     } as any)
 
     const subscribeRightLamp: Record<any, any> = new ThreeLampScene({
-        texturePath: `${routerPath}models/demo-model/textrures/`,
-        filePath: `${routerPath}models/demo-model/file2.fbx`,
+        texturePath: `${routerPath}models/demo-model/textures/metal.jpg`,
+        filePath: `${routerPath}models/demo-model/model.fbx`,
         renderElem: document.querySelector('.three-lamp--subscribe-right'),
         modelInitialRotation: {
             x: -.09,
@@ -88,8 +88,8 @@ export function initThreeObjects() {
     } as any)
 
     const footerLamp: Record<any, any> = new ThreeLampScene({
-        texturePath: `${routerPath}models/demo-model/textrures/`,
-        filePath: `${routerPath}models/demo-model/file2.fbx`,
+        texturePath: `${routerPath}models/demo-model/textures/metal.jpg`,
+        filePath: `${routerPath}models/demo-model/model.fbx`,
         renderElem: document.querySelector('.three-lamp--footer'),
         modelInitialRotation: {
             x: -2.2,

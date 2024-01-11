@@ -16,7 +16,7 @@ export class ThreeLampScene {
     modelMoveAnimationSettings = {
         direction: 'left',
         axis: 'y',
-        value: 0.0007,
+        value: 0.0003,
         moreValue: [0.5, -0.5]
     }
 
@@ -104,14 +104,24 @@ export class ThreeLampScene {
 
         const fbxLoader = new THREE.FBXLoader()
 
-        fbxLoader.setResourcePath(this.texturePath)
+        const texture = new THREE.TextureLoader().load(this.texturePath)
+        texture.wrapS = THREE.RepeatWrapping;
+        texture.wrapT = THREE.RepeatWrapping;
+        texture.rotation = 0.1
+        texture.repeat.set( 7.5, 1 );
 
         fbxLoader.load(this.filePath, (obj) => {
             this.model = obj
-            this.scene.add(this.model)
+            this.model.traverse((child) => {
+                if (child.isMesh) {
+                    child.material.map = texture
+                    child.material.needsUpdate = true
+                }
+            })
             this.model.rotation.x += this.modelInitialRotation.x
             this.model.rotation.y += this.modelInitialRotation.y
             this.model.rotation.z += this.modelInitialRotation.z
+            this.scene.add(this.model)
             this.animateScene()
             this.renderElem.classList.add('is-loaded')
         })

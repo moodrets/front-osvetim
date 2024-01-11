@@ -1,6 +1,6 @@
 <template>
     <Offcanvas name="mobileMenu">
-		<nav class="mb-8">
+		<nav class="mb-8 w-[600px] max-w-full mx-auto">
 			<ul class="text-[20px] leading-[1.1] flex flex-col">
 				<li class="border-b border-neutral-alpha">
 					<router-link 

@@ -32,6 +32,7 @@ import Accordion from '@/components/common/Accordion.vue'
 import AppTabs from '@/components/common/AppTabs.vue'
 import Pagination from '@/components/blocks/Pagination.vue'
 import AppSort from '@/components/common/AppSort.vue'
+import AppSelect from '@/components/common/AppSelect.vue'
 import MobileMenuBurger from '@/components/common/MobileMenuBurger.vue'
 import MobileFiltersBurger from '@/components/common/MobileFiltersBurger.vue'
 import CountButtons from '@/components/common/CountButtons.vue'
@@ -68,6 +69,7 @@ createApp(App)
     .component('AppTabs', AppTabs)
     .component('Pagination', Pagination)
     .component('AppSort', AppSort)
+    .component('AppSelect', AppSelect)
     .component('MobileFiltersBurger', MobileFiltersBurger)
     .component('MobileMenuBurger', MobileMenuBurger)
     .component('Offcanvas', Offcanvas)

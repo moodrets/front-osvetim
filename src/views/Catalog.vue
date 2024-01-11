@@ -34,7 +34,9 @@
         </div>
     </main>
     <Offcanvas name="mobileCatalogFilters">
-        <CatalogFilters />
+        <div class="w-[600px] max-w-full mx-auto">
+            <CatalogFilters />
+        </div>
 	</Offcanvas>
 </template>
 
