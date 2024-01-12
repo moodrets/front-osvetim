@@ -1,3 +1,6 @@
+const fbxLoader = new THREE.FBXLoader()
+const textureLoader = new THREE.TextureLoader()
+
 export class ThreeLampScene {
     scene = null
     camera = null
@@ -67,6 +70,21 @@ export class ThreeLampScene {
         requestAnimationFrame(this.animateScene.bind(this));
     }
 
+    async setTextureOnModel() {
+        const texture = textureLoader.load(this.texturePath)
+        texture.wrapS = THREE.RepeatWrapping;
+        texture.wrapT = THREE.RepeatWrapping;
+        texture.rotation = 1.45
+        texture.opacity = .1
+        texture.repeat.set(1, 20);
+        this.model?.children.forEach(child => {
+            if (child.isMesh) {
+                child.material.map = texture
+                child.material.needsUpdate = true
+            }
+        });
+    }
+
     init() {
         if (!this.renderElem) {
             return
@@ -75,55 +93,42 @@ export class ThreeLampScene {
         this.scene = new THREE.Scene()
         this.camera = new THREE.PerspectiveCamera(10.2, this.renderElem.offsetWidth / this.renderElem.offsetHeight, 1, 5000)
         this.camera.position.z = 1000
-
-        let light1 = new THREE.HemisphereLight(0xffffff, 0x444444, 1.5)
+        
+        let light1 = new THREE.HemisphereLight(0xffffff, 0x444444, 2)
         light1.position.set(0, 1, 0)
         this.scene.add(light1)
-
+        
         let light2 = new THREE.DirectionalLight(0xffffff, 1.5)
         light2.position.set(0, 1, 0)
         this.scene.add(light2)
-
+        
         let light3 = new THREE.DirectionalLight(0xffffff, 0.8)
         light3.position.set(0, -3, 0)
         this.scene.add(light3)
-
+        
         this.renderer = new THREE.WebGLRenderer({
             antialias: true,
             alpha: true
         })
-
+        
         this.renderer.setSize(this.renderElem.offsetWidth, this.renderElem.offsetHeight)
         this.renderElem.appendChild(this.renderer.domElement)
-
+        
         if (this.orbitControlEnabled) {
             this.controls = new THREE.OrbitControls(this.camera,  this.renderer.domElement);
             this.controls.enableZoom = false;
             this.controls.enablePan = false;
         }
 
-        const fbxLoader = new THREE.FBXLoader()
-
-        const texture = new THREE.TextureLoader().load(this.texturePath)
-        texture.wrapS = THREE.RepeatWrapping;
-        texture.wrapT = THREE.RepeatWrapping;
-        texture.rotation = 0.1
-        texture.repeat.set( 7.5, 1 );
-
         fbxLoader.load(this.filePath, (obj) => {
             this.model = obj
-            this.model.traverse((child) => {
-                if (child.isMesh) {
-                    child.material.map = texture
-                    child.material.needsUpdate = true
-                }
-            })
             this.model.rotation.x += this.modelInitialRotation.x
             this.model.rotation.y += this.modelInitialRotation.y
             this.model.rotation.z += this.modelInitialRotation.z
             this.scene.add(this.model)
             this.animateScene()
             this.renderElem.classList.add('is-loaded')
+            this.setTextureOnModel()
         })
 
         // this.renderElem.addEventListener('wheel', (event) => {
