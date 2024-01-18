@@ -172,7 +172,7 @@ router.afterEach(() => {
     setTimeout(() => {
         initScrollAnimate()
         initThreeObjects()
-    }, 250)
+    }, 300)
 })
 
 export default router

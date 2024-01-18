@@ -4,11 +4,12 @@ import 'cooltipz-css'
 import '@/styles/main.scss'
 
 // scripts
-import { 
+import {
     initArticlesItemSlider,
     initTapeSlider,
     initProductItemSlider,
-    initSlideshow
+    initSlideShow,
+    initMainBannersSlider
 } from '@/scripts/initSliders'
 import { initScrollAnimate } from '@/scripts/initScrollAnimate'
 import { initContactsMap } from '@/scripts/initYandexMap'
@@ -83,9 +84,10 @@ document.addEventListener('DOMContentLoaded', () => {
     /** 
     * Раскоментить когда сайт будет на laravel
         initArticlesItemSlider()
-        initTapeSlider()
         initProductItemSlider()
-        initSlideshow()
+        initMainBannersSlider()
+        initSlideShow()
+        initTapeSlider()
     **/
 })
 

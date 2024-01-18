@@ -1,6 +1,11 @@
 const fbxLoader = new THREE.FBXLoader()
 const textureLoader = new THREE.TextureLoader()
 
+/**
+ * ошибка текстур
+ * https://github.com/mrdoob/three.js/issues/16542
+ */
+
 export class ThreeLampScene {
     scene = null
     camera = null

@@ -20,4 +20,8 @@
 
 <script setup lang="ts">
 import { routerPath } from '@/reactive/RouterPath'
+import { useSwiper } from '@/composables/useSwiper'
+import { initSlideShow } from '@/scripts/initSliders'
+
+useSwiper(initSlideShow)
 </script>

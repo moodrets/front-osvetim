@@ -45,18 +45,18 @@
         ;
     }
 
-    &--banner-main {
+    &--main-banner {
         @apply 
             z-[20]
             h-[230px]
             w-[230px]
             top-0
-            left-[80px]
+            -left-[100px]
             -translate-y-[15%]
-            md:left-[110px]
             md:h-[300px]
             md:w-[300px]
-            md:-translate-y-[20%]
+            xl:left-[110px]
+            xl:-translate-y-[20%]
             xl:h-[360px]
             xl:w-[360px]
         ;

@@ -32,18 +32,9 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted, onUnmounted } from 'vue';
-import Swiper from 'swiper';
-import { initArticlesItemSlider } from '@/scripts/initSliders';
+import { useSwiper } from '@/composables/useSwiper';
 import { routerPath } from '@/reactive/RouterPath';
+import { initArticlesItemSlider } from '@/scripts/initSliders';
 
-let slider: Swiper | null = null
-
-onMounted(() => {
-    slider = initArticlesItemSlider()
-})
-
-onUnmounted(() => {
-    slider?.destroy()
-})
+useSwiper(initArticlesItemSlider)
 </script>

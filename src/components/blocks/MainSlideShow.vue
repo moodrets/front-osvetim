@@ -26,22 +26,9 @@
 </template>
 
 <script setup lang="ts">
-import { Swiper} from 'swiper'
-import { initSlideshow } from '@/scripts/initSliders'
-import { onMounted, onUnmounted } from 'vue'
+import { useSwiper } from '@/composables/useSwiper';
 import { routerPath } from '@/reactive/RouterPath';
+import { initSlideShow } from '@/scripts/initSliders';
 
-let slider: Swiper | Swiper[] | null = null
-
-onMounted(() => {
-  slider = initSlideshow()
-})
-
-onUnmounted(() => {
-    if (Array.isArray(slider)) {
-        slider.forEach(swiper => swiper.destroy())
-    } else {
-        slider?.destroy()
-    }
-})
+useSwiper(initSlideShow)
 </script>

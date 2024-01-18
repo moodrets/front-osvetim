@@ -24,9 +24,6 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted, onUnmounted } from 'vue'
-import { Swiper} from 'swiper'
-import { initSlideshow } from '@/scripts/initSliders'
 import Partners from '@/components/blocks/Partners.vue'
 import AboutSlideShow from '@/components/blocks/AboutSlideShow.vue'
 import TextPictureBlock from '@/components/blocks/TextPictureBlock.vue'
@@ -35,18 +32,4 @@ import TapeSlider from '@/components/blocks/TapeSlider.vue'
 import DescriptionBlock from '@/components/blocks/DescriptionBlock.vue'
 import AboutPresentBlock from '@/components/blocks/AboutPresentBlock.vue'
 import AboutDescriptionBlock from '@/components/blocks/AboutDescriptionBlock.vue'
-
-let slider: Swiper | Swiper[] | null = null
-
-onMounted(() => {
-    slider = initSlideshow()
-})
-
-onUnmounted(() => {
-    if (Array.isArray(slider)) {
-        slider.forEach(swiper => swiper.destroy())
-    } else {
-        slider?.destroy()
-    }
-})
 </script>

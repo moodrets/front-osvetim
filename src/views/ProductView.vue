@@ -204,14 +204,12 @@
 </template>
 
 <script setup lang="ts">
-import Swiper from 'swiper';
-import { onMounted, onUnmounted, ref } from 'vue';
-import { initProductItemSlider } from '@/scripts/initSliders';
+import { ref } from 'vue';
 import { routerPath } from '@/reactive/RouterPath';
 import ProductList from '@/components/blocks/ProductList.vue'
 import { productListFromCollection, productListFromCategory } from '@/reactive/ProductsLists'
-
-let slider: Swiper | null = null
+import { useSwiper } from '@/composables/useSwiper';
+import { initProductItemSlider } from '@/scripts/initSliders';
 
 const productPics = ref([
     `${routerPath}img/product-pic-1.png`,
@@ -220,11 +218,5 @@ const productPics = ref([
     `${routerPath}img/product-pic-4.png`,
 ])
 
-onMounted(() => {
-    slider = initProductItemSlider()
-})
-
-onUnmounted(() => {
-    slider?.destroy()
-})
+useSwiper(initProductItemSlider)
 </script>

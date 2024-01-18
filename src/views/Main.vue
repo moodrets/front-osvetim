@@ -1,21 +1,7 @@
 <template>
     <PresentBlock></PresentBlock>
     <ValuesBlock></ValuesBlock>
-    <div class="relative">
-        <div class="three-lamp three-lamp--banner-main"></div>
-        <Banner
-            :img="`${routerPath}banners/banner-2.png`"
-            class="flex"
-        >
-            
-            <div class="m-auto text-center w-[460px] max-w-full px-5">
-                <div class="h1 text-white mb-5">Баннер</div>
-                <div>
-                    <a href="#" class="app-button app-button--light">Смотреть</a>
-                </div>
-            </div>
-        </Banner>
-    </div>
+    <MainPageBanners></MainPageBanners>
     <MainCategories></MainCategories>
     <div class="centered">
         <div class="products-block pt-5 mb-10 border-t border-neutral-alpha md:mb-20">
@@ -51,14 +37,13 @@
 </template>
 
 <script lang="ts" setup>
-import { routerPath } from '@/reactive/RouterPath'
 import { productListNewItems, productListSale } from '@/reactive/ProductsLists'
 import PresentBlock from '@/components/blocks/PresentBlock.vue'
 import ValuesBlock from '@/components/blocks/ValuesBlock.vue'
-import Banner from '@/components/blocks/Banner.vue'
 import MainCategories from '@/components/blocks/MainCategories.vue'
 import ProductList from '@/components/blocks/ProductList.vue'
 import MainSlideShow from '@/components/blocks/MainSlideShow.vue'
 import InstagramBlock from '@/components/blocks/InstagramBlock.vue'
 import MainAboutBlock from '@/components/blocks/MainAboutBlock.vue'
+import MainPageBanners from '@/components/blocks/MainPageBanners.vue'
 </script>

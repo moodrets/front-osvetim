@@ -1,5 +1,5 @@
 <template>
-    <div class="swiper js-tape-slider">
+    <div class="swiper w-full js-tape-slider">
         <div class="swiper-wrapper">
             <div 
                 v-for="(slide, slideIndex) in slides" 
@@ -23,12 +23,10 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted, onUnmounted, ref } from 'vue';
-import Swiper from 'swiper';
-import { initTapeSlider } from '@/scripts/initSliders';
+import { ref } from 'vue';
 import { routerPath } from '@/reactive/RouterPath';
-
-let slider: Swiper | null = null
+import { useSwiper } from '@/composables/useSwiper';
+import { initTapeSlider } from '@/scripts/initSliders';
 
 const slides = ref([
     {
@@ -69,11 +67,5 @@ const slides = ref([
     },
 ])
 
-onMounted(() => {
-    slider = initTapeSlider()
-})
-
-onUnmounted(() => {
-    slider?.destroy()
-})
+useSwiper(initTapeSlider)
 </script>
