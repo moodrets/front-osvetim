@@ -1,7 +1,7 @@
 // styles
-import 'swiper/css'
-import 'cooltipz-css'
-import '@/styles/main.scss'
+import 'swiper/css';
+import 'cooltipz-css';
+import '@/styles/main.scss';
 
 // scripts
 import {
@@ -9,46 +9,46 @@ import {
     initTapeSlider,
     initProductItemSlider,
     initSlideShow,
-    initMainBannersSlider
-} from '@/scripts/initSliders'
-import { initScrollAnimate } from '@/scripts/initScrollAnimate'
-import { initContactsMap } from '@/scripts/initYandexMap'
-import { initThreeObjects } from '@/scripts/initThreeObjects'
+    initMainBannersSlider,
+} from '@/scripts/initSliders';
+import { initScrollAnimate } from '@/scripts/initScrollAnimate';
+import { initContactsMap } from '@/scripts/initYandexMap';
+import { initThreeObjects } from '@/scripts/initThreeObjects';
 
 // vue imports
-import { createApp } from 'vue'
-import router from '@/routes'
+import { createApp } from 'vue';
+import router from '@/routes';
 
 // vue directives
-import ScrollToDirective from '@/directives/ScrollTo'
-import ModalDirective from '@/directives/Modal'
+import ScrollToDirective from '@/directives/ScrollTo';
+import ModalDirective from '@/directives/Modal';
 
 // vue global components
-import App from '@/App.vue'
-import Details from '@/components/common/Details.vue'
-import GeoLocation from '@/components/common/GeoLocation.vue'
-import GeoLocationList from '@/components/common/GeoLocationList.vue'
-import AppSearch from '@/components/common/AppSearch.vue'
-import Accordion from '@/components/common/Accordion.vue'
-import AppTabs from '@/components/common/AppTabs.vue'
-import Pagination from '@/components/blocks/Pagination.vue'
-import AppSort from '@/components/common/AppSort.vue'
-import AppSelect from '@/components/common/AppSelect.vue'
-import MobileMenuBurger from '@/components/common/MobileMenuBurger.vue'
-import MobileFiltersBurger from '@/components/common/MobileFiltersBurger.vue'
-import CountButtons from '@/components/common/CountButtons.vue'
-import OrderDetails from '@/components/common/OrderDetails.vue'
-import Offcanvas from '@/components/common/Offcanvas.vue'
-import OffcanvasClose from '@/components/common/OffcanvasClose.vue'
-import AppModal from '@/components/common/AppModal.vue'
-import PickUpPoints from '@/components/common/PickUpPoints.vue'
-import LoginForm from '@/components/forms/LoginForm.vue'
-import RegistrationForm from '@/components/forms/RegistrationForm.vue'
-import PasswordRecoveryForm from '@/components/forms/PasswordRecoveryForm.vue'
-import OrderForm from '@/components/forms/OrderForm.vue'
-import PersonalDataForm from '@/components/forms/PersonalDataForm.vue'
-import PersonalPasswordForm from '@/components/forms/PersonalPasswordForm.vue'
-import CallbackForm from '@/components/forms/CallbackForm.vue'
+import App from '@/App.vue';
+import Details from '@/components/common/Details.vue';
+import GeoLocation from '@/components/common/GeoLocation.vue';
+import GeoLocationList from '@/components/common/GeoLocationList.vue';
+import AppSearch from '@/components/common/AppSearch.vue';
+import Accordion from '@/components/common/Accordion.vue';
+import AppTabs from '@/components/common/AppTabs.vue';
+import Pagination from '@/components/blocks/Pagination.vue';
+import AppSort from '@/components/common/AppSort.vue';
+import AppSelect from '@/components/common/AppSelect.vue';
+import MobileMenuBurger from '@/components/common/MobileMenuBurger.vue';
+import MobileFiltersBurger from '@/components/common/MobileFiltersBurger.vue';
+import CountButtons from '@/components/common/CountButtons.vue';
+import OrderDetails from '@/components/common/OrderDetails.vue';
+import Offcanvas from '@/components/common/Offcanvas.vue';
+import OffcanvasClose from '@/components/common/OffcanvasClose.vue';
+import AppModal from '@/components/common/AppModal.vue';
+import PickUpPoints from '@/components/common/PickUpPoints.vue';
+import LoginForm from '@/components/forms/LoginForm.vue';
+import RegistrationForm from '@/components/forms/RegistrationForm.vue';
+import PasswordRecoveryForm from '@/components/forms/PasswordRecoveryForm.vue';
+import OrderForm from '@/components/forms/OrderForm.vue';
+import PersonalDataForm from '@/components/forms/PersonalDataForm.vue';
+import PersonalPasswordForm from '@/components/forms/PersonalPasswordForm.vue';
+import CallbackForm from '@/components/forms/CallbackForm.vue';
 
 createApp(App)
     .directive('scroll-to', ScrollToDirective)
@@ -78,7 +78,7 @@ createApp(App)
     .component('AppModal', AppModal)
     .component('PickUpPoints', PickUpPoints)
     .use(router)
-.mount('#app')
+    .mount('#app');
 
 document.addEventListener('DOMContentLoaded', () => {
     /** 
@@ -89,10 +89,10 @@ document.addEventListener('DOMContentLoaded', () => {
         initSlideShow()
         initTapeSlider()
     **/
-})
+});
 
 window.onload = () => {
     // initScrollAnimate()
     // initContactsMap()
     // initThreeObjects()
-}
+};
